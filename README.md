@@ -13,6 +13,7 @@ This setup script is capable of setting up the following files:
  * Echo styling:[ **link1**][0] , [**link2**][5]
  * [Echo append string to files][1]
  * Bash_profile & Bashrc: [**link1**][2] , [**link2**][3] , [**link3**][4]
+ * Apt v.s. dpkg: [**link1**][6] , [**link2**][7]
 
 [0]:    https://misc.flogisoft.com/bash/tip_colors_and_formatting
 [1]:    https://www.itread01.com/p/1386169.html
@@ -20,6 +21,8 @@ This setup script is capable of setting up the following files:
 [3]:	http://jamestw.logdown.com/posts/283485--bash-profile-bashrc-difference
 [4]:	https://www.itread01.com/p/203281.html
 [5]:	https://blog.csdn.net/solan8/article/details/70172074
+[6]:	https://herb123456.pixnet.net/blog/post/1009880
+[7]:	https://www.itread01.com/content/1548652698.html
 
 
 
