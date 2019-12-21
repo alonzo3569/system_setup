@@ -6,6 +6,9 @@ This setup script is capable of setting up the following files:
 2. moos-ivp
 3. moos-ivp-logan
 4. moos-ivp-aquaticus
+5. vim
+6. terminator
+7. google
 
 
 ## Shell Script Reference:

@@ -18,7 +18,7 @@ svn co https://oceanai.mit.edu/svn/moos-ivp-aro/trunk/ ~/moos-ivp
 echo -e "--\e[32mBuilding moos-ivp \e[0m" #32:green
 cd ~/moos-ivp
 ./build.sh
-echo -e "--\e[1;92mSetup moos-ivp \e[0m" #92:Light green
+echo -e "--\e[1;92mmoos-ivp setup completed\e[0m" #92:Light green
 
 #-------------------------------------------------------
 #  Part 2: Setup moos-ivp-aquaticus
@@ -50,7 +50,7 @@ svn co svn://140.112.26.204/moos-ivp-UAL ~/moos-ivp-UAL
 echo -e "--\e[32mBuilding moos-ivp-UAL \e[0m" #32:green
 cd ~/moos-ivp-UAL
 #./build.sh					#iBlnk bug fixed 					
-echo -e "--\e[1;92mSetup moos-ivp-UAL \e[0m" #92:Light green
+echo -e "--\e[1;92mmoos-ivp-UAL setup completed\e[0m" #92:Light green
 
 #-------------------------------------------------------
 #  Part 4: Setup moos-ivp-logan
@@ -65,7 +65,7 @@ git clone https://github.com/alonzo3569/moos-ivp-logan.git
 echo -e "--\e[32mBuilding moos-ivp-logan \e[0m" #32:green
 cd ~/moos-ivp-logan
 ./build.sh
-echo -e "--\e[1;92mSetup moos-ivp-logan \e[0m" #92:Light green
+echo -e "--\e[1;92mmoos-ivp-logan setup completed\e[0m" #92:Light green
 
 echo -e "--MOOS setup finished"
 
