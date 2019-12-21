@@ -6,7 +6,7 @@
 cp -rp ./bash_files/.bashrc ~/
 cd
 echo -e "--\e[1;95mDownloading .bashrc & .bash_profile \e[0m" # 1:Bold, 95:Light magenta, m:background color, \e[0m: cleanup style
-wget http://oceanai.mit.edu/2.680/docs/.bash_profile
+wget http://oceanai.mit.edu/2.680/docs/.bash_profile          # check if bash_profile exsist, don't download again!(bash_profile.1)
 
 
 #-------------------------------------------------------
@@ -67,7 +67,7 @@ git config --global user.name "logan-zhang"
 git config --global user.email "r07525074@ntu.edu.tw"
 git config --global alias.st 'status'
 git config --global alias.cm 'commit -m'
-echo -e "\033[31m Git configurations done \033[0m"
+echo -e "--\e[1;92mGit configurations done \e[0m"
 
 #-------------------------------------------------------
 #  Part 7: Source Bash
