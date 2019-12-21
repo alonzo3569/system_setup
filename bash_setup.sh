@@ -60,7 +60,17 @@ echo -e "alias alonzobuild='cd ~/moos-ivp-logan/; ./build.sh;cd -'" 	>> ~/.bashr
 echo -e "alias loganbuild='cd ~/catkin_ws/; catkin_make;cd -'" 		>> ~/.bashrc
 
 #-------------------------------------------------------
-#  Part 6: Source Bash
+#  Part 6: Install git and configure git params
+#-------------------------------------------------------
+sudo apt-get --assume-yes install git
+git config --global user.name "logan-zhang"
+git config --global user.email "r07525074@ntu.edu.tw"
+git config --global alias.st 'status'
+git config --global alias.cm 'commit -m'
+echo -e "\033[31m Git configurations done \033[0m"
+
+#-------------------------------------------------------
+#  Part 7: Source Bash
 #-------------------------------------------------------
 source ~/.bashrc
 echo -e "--Bash setup finished"
