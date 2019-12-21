@@ -1,6 +1,6 @@
 # **System_Setup**
 
-This setup script is capable of setting up the following files: 
+This setup script is capable of setting up the following files or applications: 
 
 1. .bashrc
 2. moos-ivp
