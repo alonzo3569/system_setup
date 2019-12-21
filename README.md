@@ -10,9 +10,9 @@ This setup script is capable of setting up the following files:
 
 ## Shell Script Reference:
 
- * Echo styling:[[link1]][0],[[link2]][5]
+ * Echo styling:[ **link1**][0] , [**link2**][5]
  * [Echo append string to files][1]
- * Bash_profile & Bashrc:[**[link1]**][2] , [link2][3],[link3][4]
+ * Bash_profile & Bashrc:[**link1**][2] , [**link2**][3] , [**link3**][4]
 
 [0]:    https://misc.flogisoft.com/bash/tip_colors_and_formatting
 [1]:    https://www.itread01.com/p/1386169.html
