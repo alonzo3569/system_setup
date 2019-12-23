@@ -9,7 +9,7 @@ This setup script is capable of setting up the following files or applications:
 5. vim
 6. terminator
 7. google
-
+8. Chinese(Chewing)
 
 ## Shell Script Reference:
 
