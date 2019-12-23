@@ -9,7 +9,7 @@ This setup script is capable of setting up the following files or applications:
 5. vim
 6. terminator
 7. google
-8. Chinese(Chewing)
+8. Chinese([Chewing][18])
 
 ## Shell Script Reference:
 
@@ -50,4 +50,4 @@ This setup script is capable of setting up the following files or applications:
 [15]:	https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-ubuntu-18-04-alongside-with-windows-10-or-8-in-dual-boot.html
 [16]:	https://kknews.cc/news/226xq3z.html
 [17]:	https://kknews.cc/zh-tw/news/x22klbg.html
-
+[17]: https://medium.com/@racktar7743/ubuntu-%E5%9C%A8-ubuntu-18-04-%E4%B8%AD%E6%96%B0%E5%A2%9E%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95-4aa85782f656
