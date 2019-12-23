@@ -10,6 +10,7 @@ This setup script is capable of setting up the following files or applications:
 6. terminator
 7. google
 8. Chinese([Chewing][18])
+9. exFAT(FAT64)
 
 ## Shell Script Reference:
 
