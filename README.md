@@ -32,7 +32,7 @@ This setup script is capable of setting up the following files or applications:
 1. Win10 Fast startup [**off**][8]
 2. For Dell, BitLocker [**off**][9]
 3. Secure boot **off**
-4. For Dell xps9370, `F2(BIOS) -> Change **RAID** to **ACHI**` [**link1**][10] , [**link2**][11]
+4. For Dell xps9370, `F2(BIOS) -> System Configuration -> SATA Operation -> Change **RAID** to **ACHI**` [**link1**][10] , [**link2**][11]
 
 [8]:	http://www.windows5.online/windows/w10/gywin10/201704/93351.html
 [9]:	https://www.dell.com/support/article/tw/zh/twbsd1/sln302845/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-%E4%B8%AD%E5%90%AF%E7%94%A8%E6%88%96%E7%A6%81%E7%94%A8-bitlocker?lang=zh
