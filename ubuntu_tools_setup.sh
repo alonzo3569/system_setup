@@ -26,5 +26,10 @@ echo -e "--\e[1;95mInstalling Chinese(Chewing) \e[0m" # 1:Bold, 95:Light magenta
 sudo apt --assume-yes install ibus-chewing
 echo -e "--\e[1;92mChinese(Chewing) installation complete\e[0m" #92:Light green
 
+## exFAT(FAT64)
+echo -e "--\e[1;95mInstalling exFAT(FAT64) \e[0m" # 1:Bold, 95:Light magenta
+sudo apt-get install exfat-utils exfat-fuse
+echo -e "--\e[1;92mexFAT(FAT64) installation complete \e[0m" #92:Light green
+
 ## Done
 echo -e "--Ubuntu tools setup complete \e[0m"
