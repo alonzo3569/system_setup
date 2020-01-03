@@ -28,7 +28,7 @@ echo -e '\n\n' >> ~/.bashrc
 echo -e "#====================================" 	>> ~/.bashrc
 echo -e "#MOOS ENV SETUP" 				>> ~/.bashrc
 echo -e "#===================================="		>> ~/.bashrc
-echo "export PATH=${symbol}${path}:/home/${usr}/moos-ivp/bin:/home/${usr}/moos-ivp-aquaticus/bin:/home/${usr}/moos-ivp-UAL/bin:/home/${usr}/moos-ivp-logan/bin" 	>> ~/.bashrc
+echo "export PATH=${symbol}${path}:/home/${usr}/moos-ivp/bin:/home/${usr}/moos-ivp-aquaticus/bin:/home/${usr}/moos-ivp-UAL/bin:/home/${usr}/moos-ivp-logan/bin:/home/${usr}/moos-ivp/scripts" 	>> ~/.bashrc
 echo "export IVP_BEHAVIOR_DIRS=/home/${usr}/moos-ivp-aquaticus/lib:/home/${usr}/moos-ivp/lib:/home/${usr}/moos-ivp-UAL/lib:/home/${usr}/moos-ivp-logan/lib" 		>> ~/.bashrc
 
 #export => let software can be read from any directory 
