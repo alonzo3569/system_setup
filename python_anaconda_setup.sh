@@ -17,4 +17,5 @@ bash ~/Downloads/Anaconda3-2019.10-Linux-x86_64.sh
 source ~/.bashrc
 
 ## Export environment
-#conda config --set auto_activate_base True
+conda config --set auto_activate_base True 
+#This command will allows conda-init to add anaconda-navigator(command for launching anaconda) to shell path automatically. However, it will create a "(base)" tag in front of your terminal. Set it to False and source to remove the tag
