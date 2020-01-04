@@ -8,7 +8,7 @@ This setup script is capable of setting up the following files or applications:
 4. moos-ivp-aquaticus
 5. vim
 6. terminator
-7. google
+7. [google][20]
 8. Chinese([Chewing][18])
 9. exFAT(FAT64)
 
@@ -58,3 +58,4 @@ This setup script is capable of setting up the following files or applications:
 1. 0xc000000e: [ **link1**][19]
 
 [19]: https://www.reneelab.net/win10-start-0xc000000e.html?fbclid=IwAR29UkrvG_E5iFp1h8SiQ17EKjlEcBn62mTFYqd6cN36FUW8o4JWf5zBtZQ
+[20]: http://samwhelp.github.io/book-ubuntu-qna/read/case/app/google-chrome/install?fbclid=IwAR1osksGsYwyXW4kbivbsm2lotWrH3hCIPziL-TYqn9YMhXPlOGh6adyUF0
