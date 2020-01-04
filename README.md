@@ -52,3 +52,9 @@ This setup script is capable of setting up the following files or applications:
 [16]:	https://kknews.cc/news/226xq3z.html
 [17]:	https://kknews.cc/zh-tw/news/x22klbg.html
 [18]: https://medium.com/@racktar7743/ubuntu-%E5%9C%A8-ubuntu-18-04-%E4%B8%AD%E6%96%B0%E5%A2%9E%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95-4aa85782f656
+
+## Win10 error trouble shooting
+
+1. 0xc000000e: [ **link1**][19]
+
+[19]: https://www.reneelab.net/win10-start-0xc000000e.html?fbclid=IwAR29UkrvG_E5iFp1h8SiQ17EKjlEcBn62mTFYqd6cN36FUW8o4JWf5zBtZQ
