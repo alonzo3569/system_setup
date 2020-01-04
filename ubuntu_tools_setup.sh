@@ -15,10 +15,12 @@ echo -e "--\e[1;92mTerminator installation complete \e[0m" #92:Light green
 
 ## Google
 echo -e "--\e[1;95mInstalling terminator \e[0m" # 1:Bold, 95:Light magenta
-sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+#sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
+#wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get install google-chrome-stable
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo -e "--\e[1;92mTerminator installation complete \e[0m" #92:Light green 
 
 ## Chinese(Chewing)
