@@ -43,7 +43,7 @@ This setup script is capable of setting up the following files or applications:
 ## Ubuntu & Win10 Dual Boot Reference:
 
 1. Installation: [**link1**][12] , [**link2**][13] , [**link3**][14] , [**link4**][15]
-2. MBR(legacy BIOS) v.s. GPT(UEFI): [**link1**][16] , [**link2**][17]
+2. MBR(legacy BIOS) v.s. GPT(UEFI): [**link1**][16] , [**link2**][17] , [**link3**][21]
 
 [12]:	https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4
 [13]:	https://min-sheng.github.io/teaching/UEFI_%E9%9B%99%E7%A1%AC%E7%A2%9F%E5%AE%89%E8%A3%9D_Win-10_x_Ubuntu_16.04_%E9%9B%99%E7%B3%BB%E7%B5%B1%E6%95%99%E5%AD%B8/
@@ -52,7 +52,7 @@ This setup script is capable of setting up the following files or applications:
 [16]:	https://kknews.cc/news/226xq3z.html
 [17]:	https://kknews.cc/zh-tw/news/x22klbg.html
 [18]: https://medium.com/@racktar7743/ubuntu-%E5%9C%A8-ubuntu-18-04-%E4%B8%AD%E6%96%B0%E5%A2%9E%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95-4aa85782f656
-
+[21]: https://www.reneelab.net/mbr-or-gpt.html
 ## Win10 error trouble shooting
 
 1. 0xc000000e: [ **link1**][19]
