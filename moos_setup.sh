@@ -49,7 +49,7 @@ svn co svn://140.112.26.204/moos-ivp-UAL ~/moos-ivp-UAL
 ## Building moos-ivp-UAL
 echo -e "--\e[32mBuilding moos-ivp-UAL \e[0m" #32:green
 cd ~/moos-ivp-UAL
-#./build.sh					#iBlnk bug fixed 					
+#./build.sh					#iBlink bug fixed 					
 echo -e "--\e[1;92mmoos-ivp-UAL setup completed\e[0m" #92:Light green
 
 #-------------------------------------------------------
