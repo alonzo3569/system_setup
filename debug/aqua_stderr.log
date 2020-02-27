@@ -1,0 +1,7 @@
++++++++++++++++++++++++++++++++++++++++++
+MOOSGeodesy_INCLUDE_DIRS:/home/logan/moos-ivp/MOOS/MOOSGeodesy/libMOOSGeodesy/include
+MOOSGeodesy_LIB_PATH:
++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++
+SYSTEM_LIBS:mpthread
++++++++++++++++++++++++++++++++++++++++++
