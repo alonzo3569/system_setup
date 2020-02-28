@@ -1,0 +1,490 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  fonts-liberation2 fonts-opensymbol gir1.2-geocodeglib-1.0
+  gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gudev-1.0
+  gir1.2-udisks-2.0 grilo-plugins-0.3-base gstreamer1.0-gtk3
+  libboost-date-time1.65.1 libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-locale1.65.1 libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5
+  libcmis-0.5-5v5 libcolamd2 libdazzle-1.0-0 libe-book-0.1-1
+  libedataserverui-1.2-2 libeot0 libepubgen-0.1-1 libetonyek-0.1-1
+  libevent-2.1-6 libexiv2-14 libfreerdp-client2-2 libfreerdp2-2 libgc1c2
+  libgee-0.8-2 libgexiv2-2 libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4
+  liblangtag-common liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0
+  libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0
+  libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1 libwinpr2-2
+  libxapian30 libxmlsec1 libxmlsec1-nss lp-solve media-player-info
+  python3-mako python3-markupsafe syslinux syslinux-common syslinux-legacy
+  usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  libasound2-doc
+The following NEW packages will be installed:
+  libasound2-dev
+0 upgraded, 1 newly installed, 0 to remove and 132 not upgraded.
+Need to get 123 kB of archives.
+After this operation, 664 kB of additional disk space will be used.
+Get:1 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasound2-dev amd64 1.1.3-5ubuntu0.2 [123 kB]
+Fetched 123 kB in 0s (5159 kB/s)
+Selecting previously unselected package libasound2-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165349 files and directories currently installed.)
+Preparing to unpack .../libasound2-dev_1.1.3-5ubuntu0.2_amd64.deb ...
+Unpacking libasound2-dev:amd64 (1.1.3-5ubuntu0.2) ...
+Setting up libasound2-dev:amd64 (1.1.3-5ubuntu0.2) ...
+A    /home/logan/moos-ivp-UAL/bin
+A    /home/logan/moos-ivp-UAL/bin/MyGenMOOSApp
+A    /home/logan/moos-ivp-UAL/build
+A    /home/logan/moos-ivp-UAL/build/README.txt
+A    /home/logan/moos-ivp-UAL/lib
+A    /home/logan/moos-ivp-UAL/lib/README.txt
+A    /home/logan/moos-ivp-UAL/missions
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/clean.sh
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/launch.sh
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/launch_shoreside.sh
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/launch_vehicle.sh
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/meta_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/meta_vehicle.bhv
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/meta_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_iM200.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_origin_warp.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pBasicContactMgr.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pCheckSound.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pDeadManPost.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pHelmIvP.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pHostInfo.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pLogger.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pMarinePID.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pNodeReporter.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pShare.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_pStoreSound.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_uFldMessageHandler.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_uFldNodeBroker.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_uProcessWatch.moos
+A    /home/logan/moos-ivp-UAL/missions/cthung_thesis_mission/plug_uSimMarine.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/clean.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/launch.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/meta_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/meta_vehicle.bhv
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/meta_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_origin_warp.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pHelmIvP.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pHostInfo.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pLogger.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pMarinePID.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pNodeReporter.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_pShare.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_uFldNodeBroker.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_uProcessWatch.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop/plug_uSimMarine.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/clean.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/launch.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/launch_shoreside.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/launch_vehicle.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/meta_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/meta_vehicle.bhv
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/meta_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_iM200.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_origin_warp.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pBasicContactMgr.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pDeadManPost.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pHelmIvP.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pHostInfo.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pLogger.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pMarinePID.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pNodeReporter.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_pShare.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_uFldMessageHandler.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_uFldNodeBroker.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_uProcessWatch.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_field_test/plug_uSimMarine.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/clean.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/launch.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/launch_shoreside.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/launch_vehicle.sh
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/meta_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/meta_vehicle.bhv
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/meta_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_iM200.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_origin_warp.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pBasicContactMgr.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pDeadManPost.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pHelmIvP.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pHostInfo.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pLogger.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pMarinePID.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pNodeReporter.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_pShare.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_uFldMessageHandler.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_uFldNodeBroker.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_uProcessWatch.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/plug_uSimMarine.moos
+A    /home/logan/moos-ivp-UAL/missions/ntu_workshop_patten/targ_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/Data_from_scp
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/Spectrogram_data
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/Spectrogram_data/README.txt
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/Spectrogram_figure
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/Spectrogram_figure/README
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/GUI_spectrogramViewer.fig
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/GUI_spectrogramViewer.m
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/clean.sh
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/interfaces_for_payload_computer
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/launch.sh
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/launch_shoreside.sh
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/launch_vehicle.sh
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_shoreside.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle1.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle2.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle3.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle4.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle5.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/meta_vehicle6.bhv
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_iM200.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_origin_warp.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pAmbientCalculate.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pBasicContactMgr.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pDataSender.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pDirectionCalculator.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pHelmIvP.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pHostInfo.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pLogger.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pMarinePID.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pNodeReporter.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pPoseKeep.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pResultSaver.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pResultSaver_ch1.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pResultSaver_ch2.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pShare.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pStoreSoundX.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_pWhistleDetector_vehicle.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_uFldMessageHandler.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_uFldNodeBroker.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_uProcessWatch.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_uSimMarine.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/plug_uTimerScript.moos
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/shore_field_clean.sh
+A    /home/logan/moos-ivp-UAL/missions/yhhuang_thesis_mission/vehicle_field_clean.sh
+A    /home/logan/moos-ivp-UAL/src
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/.vscode
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/.vscode/settings.json
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/AOF_SimpleWaypoint.cpp
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/AOF_SimpleWaypoint.h
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/BHV_SourceTracking.cpp
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/BHV_SourceTracking.h
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/lib_behaviors-yhhuang/README
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/element_ex
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/element_ex/ais.alog
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AISdecoder.cpp
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AISdecoder.h
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AISdecoder_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AISdecoder_Info.h
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AisNode.cpp
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/AisNode.h
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/BinToDec
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/Poke_nmea_sen.sh
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/binarytodeci.cpp
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/nmea-sample
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/nmea-sample-2
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/pAISdecoder.moos
+A    /home/logan/moos-ivp-UAL/src/pAISdecoder/result.alog
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/AmbientCalculate.cpp
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/AmbientCalculate.h
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/AmbientCalculate_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/AmbientCalculate_Info.h
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pAmbientCalculate/pAmbientCalculate.moos
+A    /home/logan/moos-ivp-UAL/src/pCheckSound
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/CheckSound.cpp
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/CheckSound.h
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/CheckSound_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/CheckSound_Info.h
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pCheckSound/pCheckSound.moos
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest/0_whistle_data.txt_sending
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest/1_whistle_data.txt_sending
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest/2_whistle_data.txt_sending
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest/3_whistle_data.txt_sending
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataTest/README
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataReceiver.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataReceiver.h
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataReceiver_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/DataReceiver_Info.h
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataReceiver/pDataReceiver.moos
+A    /home/logan/moos-ivp-UAL/src/pDataSender
+A    /home/logan/moos-ivp-UAL/src/pDataSender/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pDataSender/DataSender.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataSender/DataSender.h
+A    /home/logan/moos-ivp-UAL/src/pDataSender/DataSender_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataSender/DataSender_Info.h
+A    /home/logan/moos-ivp-UAL/src/pDataSender/Overview
+A    /home/logan/moos-ivp-UAL/src/pDataSender/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pDataSender/pDataSender.moos
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/angle_test_file
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/angle_test_file/0_degree_two_ch.txt
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/angle_test_file/30_degree_two_ch.txt
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/angle_test_file/negative_30_degree_two_ch.txt
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/csv_file
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/csv_file/README
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/DirectionCalculator.cpp
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/DirectionCalculator.h
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/DirectionCalculator_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/DirectionCalculator_Info.h
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/clean.sh
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/filt.cpp
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/filt.h
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pDirectionCalculator/pDirectionCalculator.moos
+A    /home/logan/moos-ivp-UAL/src/pNumberCal
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/MyData.cpp
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/MyData.h
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/NumberCal.cpp
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/NumberCal.h
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/NumberCal_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/NumberCal_Info.h
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/pNumberCal.moos
+A    /home/logan/moos-ivp-UAL/src/pNumberCal/pPrimeFactor.moos
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/4K_6K.wav
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/PlayAudio.cpp
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/PlayAudio.h
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/PlayAudio_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/PlayAudio_Info.h
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/pPlayAudio.moos
+A    /home/logan/moos-ivp-UAL/src/pPlayAudio/play.sh
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/PoseKeep.cpp
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/PoseKeep.h
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/PoseKeep_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/PoseKeep_Info.h
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pPoseKeep/pPoseKeep.moos
+A    /home/logan/moos-ivp-UAL/src/pResultSaver
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/Data_for_scp
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/Data_for_scp/README
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/ResultSaver.cpp
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/ResultSaver.h
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/ResultSaver_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/ResultSaver_Info.h
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/clean.sh
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pResultSaver/pResultSaver.moos
+A    /home/logan/moos-ivp-UAL/src/pStoreSound
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/StoreSound.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/StoreSound.cpp.backup
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/StoreSound.h
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/StoreSound_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/StoreSound_Info.h
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSound/pStoreSound.moos
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/StoreSoundX.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/StoreSoundX.h
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/StoreSoundX_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/StoreSoundX_Info.h
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pStoreSoundX/pStoreSoundX.moos
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/Spectrogram_data
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/Spectrogram_data/README.txt
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/Spectrogram_figure
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/Spectrogram_figure/README
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/README
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/install_fftw3
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/libfftw3-3_3.3.5-3_armhf.deb
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/libfftw3-bin_3.3.5-3_armhf.deb
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/libfftw3-dev_3.3.5-3_armhf.deb
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/libfftw3-double3_3.3.5-3_armhf.deb
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/fftw3_package_for_armhd/libfftw3-single3_3.3.5-3_armhf.deb
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/GUI_spectrogramViewer.fig
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/GUI_spectrogramViewer.m
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/README.txt
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/SpectrogramViewer.m
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/WhistleDetector.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/WhistleDetector.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/WhistleDetector_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/WhistleDetector_Info.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/clean.sh
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/detection_algorithm.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/detection_algorithm.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector/pWhistleDetector.moos
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/.LastOpenedMOOSLogDirectory
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/WhistleDetector_vehicle.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/WhistleDetector_vehicle.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/WhistleDetector_vehicle_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/WhistleDetector_vehicle_Info.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/clean.sh
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/detection_algorithm.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/detection_algorithm.h
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/main.cpp
+A    /home/logan/moos-ivp-UAL/src/pWhistleDetector_vehicle/pWhistleDetector_vehicle.moos
+A    /home/logan/moos-ivp-UAL/src/uSimAngle
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/SimAngle.cpp
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/SimAngle.h
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/SimAngle_Info.cpp
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/SimAngle_Info.h
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/main.cpp
+A    /home/logan/moos-ivp-UAL/src/uSimAngle/uSimAngle.moos
+A    /home/logan/moos-ivp-UAL/src/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/src/src_list.txt
+A    /home/logan/moos-ivp-UAL/CMakeLists.txt
+A    /home/logan/moos-ivp-UAL/README.txt
+A    /home/logan/moos-ivp-UAL/build.sh
+A    /home/logan/moos-ivp-UAL/clean.sh
+Checked out revision 17.
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MOOS: /home/logan/moos-ivp/build/MOOS/MOOSCore/MOOSTargets.cmake (Required is at least version "10.0") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/logan/moos-ivp-UAL/build
+Scanning dependencies of target pStoreSound
+[  1%] Building CXX object src/pStoreSound/CMakeFiles/pStoreSound.dir/StoreSound.cpp.o
+[  3%] Building CXX object src/pStoreSound/CMakeFiles/pStoreSound.dir/StoreSound_Info.cpp.o
+[  4%] Building CXX object src/pStoreSound/CMakeFiles/pStoreSound.dir/main.cpp.o
+[  6%] Linking CXX executable ../../../bin/pStoreSound
+[  6%] Built target pStoreSound
+Scanning dependencies of target pCheckSound
+[  7%] Building CXX object src/pCheckSound/CMakeFiles/pCheckSound.dir/CheckSound.cpp.o
+[  9%] Building CXX object src/pCheckSound/CMakeFiles/pCheckSound.dir/CheckSound_Info.cpp.o
+[ 11%] Building CXX object src/pCheckSound/CMakeFiles/pCheckSound.dir/main.cpp.o
+[ 12%] Linking CXX executable ../../../bin/pCheckSound
+[ 12%] Built target pCheckSound
+Scanning dependencies of target pPlayAudio
+[ 14%] Building CXX object src/pPlayAudio/CMakeFiles/pPlayAudio.dir/PlayAudio.cpp.o
+[ 15%] Building CXX object src/pPlayAudio/CMakeFiles/pPlayAudio.dir/PlayAudio_Info.cpp.o
+[ 17%] Building CXX object src/pPlayAudio/CMakeFiles/pPlayAudio.dir/main.cpp.o
+[ 19%] Linking CXX executable ../../../bin/pPlayAudio
+[ 19%] Built target pPlayAudio
+Scanning dependencies of target BHV_SourceTracking
+[ 20%] Building CXX object src/lib_behaviors-yhhuang/CMakeFiles/BHV_SourceTracking.dir/BHV_SourceTracking.cpp.o
+[ 22%] Building CXX object src/lib_behaviors-yhhuang/CMakeFiles/BHV_SourceTracking.dir/AOF_SimpleWaypoint.cpp.o
+[ 23%] Linking CXX shared library ../../../lib/libBHV_SourceTracking.so
+[ 23%] Built target BHV_SourceTracking
+Scanning dependencies of target pAISdecoder
+[ 25%] Building CXX object src/pAISdecoder/CMakeFiles/pAISdecoder.dir/AISdecoder.cpp.o
+[ 26%] Building CXX object src/pAISdecoder/CMakeFiles/pAISdecoder.dir/AISdecoder_Info.cpp.o
+[ 28%] Building CXX object src/pAISdecoder/CMakeFiles/pAISdecoder.dir/AisNode.cpp.o
+[ 30%] Building CXX object src/pAISdecoder/CMakeFiles/pAISdecoder.dir/main.cpp.o
+[ 31%] Linking CXX executable ../../../bin/pAISdecoder
+[ 31%] Built target pAISdecoder
+Scanning dependencies of target pWhistleDetector
+[ 33%] Building CXX object src/pWhistleDetector/CMakeFiles/pWhistleDetector.dir/WhistleDetector.cpp.o
+[ 34%] Building CXX object src/pWhistleDetector/CMakeFiles/pWhistleDetector.dir/WhistleDetector_Info.cpp.o
+[ 36%] Building CXX object src/pWhistleDetector/CMakeFiles/pWhistleDetector.dir/detection_algorithm.cpp.o
+[ 38%] Building CXX object src/pWhistleDetector/CMakeFiles/pWhistleDetector.dir/main.cpp.o
+[ 39%] Linking CXX executable ../../../bin/pWhistleDetector
+[ 39%] Built target pWhistleDetector
+Scanning dependencies of target pWhistleDetector_vehicle
+[ 41%] Building CXX object src/pWhistleDetector_vehicle/CMakeFiles/pWhistleDetector_vehicle.dir/WhistleDetector_vehicle.cpp.o
+[ 42%] Building CXX object src/pWhistleDetector_vehicle/CMakeFiles/pWhistleDetector_vehicle.dir/WhistleDetector_vehicle_Info.cpp.o
+[ 44%] Building CXX object src/pWhistleDetector_vehicle/CMakeFiles/pWhistleDetector_vehicle.dir/detection_algorithm.cpp.o
+[ 46%] Building CXX object src/pWhistleDetector_vehicle/CMakeFiles/pWhistleDetector_vehicle.dir/main.cpp.o
+[ 47%] Linking CXX executable ../../../bin/pWhistleDetector_vehicle
+[ 47%] Built target pWhistleDetector_vehicle
+Scanning dependencies of target pStoreSoundX
+[ 49%] Building CXX object src/pStoreSoundX/CMakeFiles/pStoreSoundX.dir/StoreSoundX.cpp.o
+[ 50%] Building CXX object src/pStoreSoundX/CMakeFiles/pStoreSoundX.dir/StoreSoundX_Info.cpp.o
+[ 52%] Building CXX object src/pStoreSoundX/CMakeFiles/pStoreSoundX.dir/main.cpp.o
+[ 53%] Linking CXX executable ../../../bin/pStoreSoundX
+[ 53%] Built target pStoreSoundX
+Scanning dependencies of target pResultSaver
+[ 55%] Building CXX object src/pResultSaver/CMakeFiles/pResultSaver.dir/ResultSaver.cpp.o
+[ 57%] Building CXX object src/pResultSaver/CMakeFiles/pResultSaver.dir/ResultSaver_Info.cpp.o
+[ 58%] Building CXX object src/pResultSaver/CMakeFiles/pResultSaver.dir/main.cpp.o
+[ 60%] Linking CXX executable ../../../bin/pResultSaver
+[ 60%] Built target pResultSaver
+Scanning dependencies of target pDataSender
+[ 61%] Building CXX object src/pDataSender/CMakeFiles/pDataSender.dir/DataSender.cpp.o
+[ 63%] Building CXX object src/pDataSender/CMakeFiles/pDataSender.dir/DataSender_Info.cpp.o
+[ 65%] Building CXX object src/pDataSender/CMakeFiles/pDataSender.dir/main.cpp.o
+[ 66%] Linking CXX executable ../../../bin/pDataSender
+[ 66%] Built target pDataSender
+Scanning dependencies of target pDataReceiver
+[ 68%] Building CXX object src/pDataReceiver/CMakeFiles/pDataReceiver.dir/DataReceiver.cpp.o
+[ 69%] Building CXX object src/pDataReceiver/CMakeFiles/pDataReceiver.dir/DataReceiver_Info.cpp.o
+[ 71%] Building CXX object src/pDataReceiver/CMakeFiles/pDataReceiver.dir/main.cpp.o
+[ 73%] Linking CXX executable ../../../bin/pDataReceiver
+[ 73%] Built target pDataReceiver
+Scanning dependencies of target pDirectionCalculator
+[ 74%] Building CXX object src/pDirectionCalculator/CMakeFiles/pDirectionCalculator.dir/DirectionCalculator.cpp.o
+[ 76%] Building CXX object src/pDirectionCalculator/CMakeFiles/pDirectionCalculator.dir/DirectionCalculator_Info.cpp.o
+[ 77%] Building CXX object src/pDirectionCalculator/CMakeFiles/pDirectionCalculator.dir/filt.cpp.o
+[ 79%] Building CXX object src/pDirectionCalculator/CMakeFiles/pDirectionCalculator.dir/main.cpp.o
+[ 80%] Linking CXX executable ../../../bin/pDirectionCalculator
+[ 80%] Built target pDirectionCalculator
+Scanning dependencies of target pAmbientCalculate
+[ 82%] Building CXX object src/pAmbientCalculate/CMakeFiles/pAmbientCalculate.dir/AmbientCalculate.cpp.o
+[ 84%] Building CXX object src/pAmbientCalculate/CMakeFiles/pAmbientCalculate.dir/AmbientCalculate_Info.cpp.o
+[ 85%] Building CXX object src/pAmbientCalculate/CMakeFiles/pAmbientCalculate.dir/main.cpp.o
+[ 87%] Linking CXX executable ../../../bin/pAmbientCalculate
+[ 87%] Built target pAmbientCalculate
+Scanning dependencies of target pPoseKeep
+[ 88%] Building CXX object src/pPoseKeep/CMakeFiles/pPoseKeep.dir/PoseKeep.cpp.o
+[ 90%] Building CXX object src/pPoseKeep/CMakeFiles/pPoseKeep.dir/PoseKeep_Info.cpp.o
+[ 92%] Building CXX object src/pPoseKeep/CMakeFiles/pPoseKeep.dir/main.cpp.o
+[ 93%] Linking CXX executable ../../../bin/pPoseKeep
+[ 93%] Built target pPoseKeep
+Scanning dependencies of target uSimAngle
+[ 95%] Building CXX object src/uSimAngle/CMakeFiles/uSimAngle.dir/SimAngle.cpp.o
+[ 96%] Building CXX object src/uSimAngle/CMakeFiles/uSimAngle.dir/SimAngle_Info.cpp.o
+[ 98%] Building CXX object src/uSimAngle/CMakeFiles/uSimAngle.dir/main.cpp.o
+[100%] Linking CXX executable ../../../bin/uSimAngle
+[100%] Built target uSimAngle

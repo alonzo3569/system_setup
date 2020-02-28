@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/logan/moos-ivp-logan/build
+-- Found MOOS: /home/logan/moos-ivp/build/MOOS/MOOSCore/MOOSTargets.cmake (Required is at least version "10.0") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/logan/moos-ivp-logan/build
+Scanning dependencies of target BHV_Pulse
+[  3%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_Pulse.dir/BHV_Pulse.cpp.o
+[  7%] Linking CXX shared library ../../../lib/libBHV_Pulse.so
+[  7%] Built target BHV_Pulse
+Scanning dependencies of target BHV_test
+[ 11%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_test.dir/BHV_test.cpp.o
+[ 14%] Linking CXX shared library ../../../lib/libBHV_test.so
+[ 14%] Built target BHV_test
+Scanning dependencies of target BHV_ZigLeg
+[ 18%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_ZigLeg.dir/BHV_ZigLeg.cpp.o
+[ 22%] Linking CXX shared library ../../../lib/libBHV_ZigLeg.so
+[ 22%] Built target BHV_ZigLeg
+Scanning dependencies of target BHV_rotate_lawnmower
+[ 25%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_rotate_lawnmower.dir/BHV_rotate_lawnmower.cpp.o
+[ 29%] Linking CXX shared library ../../../lib/libBHV_rotate_lawnmower.so
+[ 29%] Built target BHV_rotate_lawnmower
+Scanning dependencies of target BHV_circle_sine
+[ 33%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_circle_sine.dir/BHV_circle_sine.cpp.o
+[ 37%] Linking CXX shared library ../../../lib/libBHV_circle_sine.so
+[ 37%] Built target BHV_circle_sine
+Scanning dependencies of target BHV_sine
+[ 40%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_sine.dir/BHV_sine.cpp.o
+[ 44%] Linking CXX shared library ../../../lib/libBHV_sine.so
+[ 44%] Built target BHV_sine
+Scanning dependencies of target BHV_Lawnmower
+[ 48%] Building CXX object src/lib_behaviors-alonzo/CMakeFiles/BHV_Lawnmower.dir/BHV_Lawnmower.cpp.o
+[ 51%] Linking CXX shared library ../../../lib/libBHV_Lawnmower.so
+[ 51%] Built target BHV_Lawnmower
+Scanning dependencies of target pPoseKeepingX
+[ 55%] Building CXX object src/pPoseKeepingX/CMakeFiles/pPoseKeepingX.dir/PoseKeepingX.cpp.o
+[ 59%] Building CXX object src/pPoseKeepingX/CMakeFiles/pPoseKeepingX.dir/PoseKeepingX_Info.cpp.o
+[ 62%] Building CXX object src/pPoseKeepingX/CMakeFiles/pPoseKeepingX.dir/main.cpp.o
+[ 66%] Building CXX object src/pPoseKeepingX/CMakeFiles/pPoseKeepingX.dir/PoseKeeping_Mode.cpp.o
+[ 70%] Linking CXX executable ../../../bin/pPoseKeepingX
+[ 70%] Built target pPoseKeepingX
+Scanning dependencies of target uSimMarineX_HWGR
+[ 74%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/USM_MOOSApp.cpp.o
+[ 77%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/USM_Model.cpp.o
+[ 81%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/USM_Info.cpp.o
+[ 85%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/SimEngine.cpp.o
+[ 88%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/ThrustMap.cpp.o
+[ 92%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/main.cpp.o
+[ 96%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/MOOSGeodesy.cpp.o
+[100%] Linking CXX executable ../../../bin/uSimMarineX_HWGR
+[100%] Built target uSimMarineX_HWGR
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/logan/moos-ivp-logan/build
+[  7%] Built target BHV_Pulse
+[ 14%] Built target BHV_test
+[ 22%] Built target BHV_ZigLeg
+[ 29%] Built target BHV_rotate_lawnmower
+[ 37%] Built target BHV_circle_sine
+[ 44%] Built target BHV_sine
+[ 51%] Built target BHV_Lawnmower
+[ 70%] Built target pPoseKeepingX
+[100%] Built target uSimMarineX_HWGR

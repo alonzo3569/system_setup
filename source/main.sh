@@ -3,8 +3,6 @@
 #-------------------------------------------------------
 #  Part 1: Env params
 #-------------------------------------------------------
-export CHECK_MARK="\e[0;32m\xE2\x9C\x94\e[0m"
-export CROSS_MARK='\u00D7'
 #-------------------------------------------------------
 #  Part 1: Functions
 #-------------------------------------------------------
@@ -106,26 +104,21 @@ check_install()
 	fi
 }
 
-trivial_func()
+
+add_remove()
 {
-
-	if [ "${#todo_list[@]}" == "0" ] && [ "${#waiting_list[@]}" != "0" ]
-	then 
-		echo -e "\e[1;97mYou already installed every MOOS App! \e[0m"
-		break
-
-	elif [ "${#todo_list[@]}" == "4" ]
-	then
-		echo -e "These are Apps that you haven't installed:"
-		for app in ${todo_list[*]}
-		  do
-		    echo -e "\e[1;31m $app \e[0m"
-		done 
-	else 
-		echo -e "Already install:\e[1;34m ${done_list[*]} \e[0m"
-		echo -e "Haven't install:\e[1;31m ${todo_list[*]} \e[0m"	
-	fi 
+	# Find index of moos-ivp (! => return index instead of value)
+	for i in ${!todo_list[*]} 
+	  do
+	    if [ "${todo_list[i]}" == $1 ]
+	    then
+	      #echo moos-ivp is index $i
+	      waiting_list+=("${todo_list[$i]}")
+	      unset todo_list[$i]
+	    fi
+	done
 }
+
 
 
 

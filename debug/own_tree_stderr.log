@@ -1,0 +1,23 @@
+CMake Warning at CMakeLists.txt:29 (find_package):
+  By not providing "FindMOOS.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "MOOS", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "MOOS" (requested
+  version 10.0) with any of the following names:
+
+    MOOSConfig.cmake
+    moos-config.cmake
+
+  Add the installation prefix of "MOOS" to CMAKE_PREFIX_PATH or set
+  "MOOS_DIR" to a directory containing one of the above files.  If "MOOS"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+Please set MOOSIVP_SOURCE_TREE_BASE to  
+the location of the "moos-ivp" folder 
+fatal: destination path '/home/logan' already exists and is not an empty directory.
+/home/logan/system_setup/source/moos.sh: line 222: ./build.sh: No such file or directory
+fatal: destination path '/home/logan/moos-ivp-logan' already exists and is not an empty directory.
+fatal: destination path '/home/logan/moos-ivp-logan' already exists and is not an empty directory.

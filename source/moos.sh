@@ -57,6 +57,28 @@ add_path()
 	fi
 }
 
+add_lib()
+{
+	str=`grep "export IVP_BEHAVIOR_DIRS" ~/.bashrc`
+	num=`grep -n "export IVP_BEHAVIOR_DIRS" ~/.bashrc | cut -d ':' -f 1`
+	check_repeat=`echo $str | grep $1 | wc -l`
+
+	if [ "$str" == "" ]
+	then
+	  echo -e "export IVP_BEHAVIOR_DIRS=\$IVP_BEHAVIOR_DIRS:/home/$user/$1/lib" >> ~/.bashrc
+	else
+	  # if $1 path already exist
+	  if [ $check_repeat == 0 ]
+	  then
+	    # rm path
+	    sed -i ${num}d ~/.bashrc &> /dev/null
+
+	    # write path back
+	    echo -e "$str:/home/$user/$1/lib" >> ~/.bashrc
+	  fi
+	fi
+}
+
 
 
 #-------------------------------------------------------
@@ -183,14 +205,29 @@ setup_UAL()
 #-------------------------------------------------------
 #  Part 1: Setup moos-ivp-own-tree
 #-------------------------------------------------------
-#setup_user()
-#{
+
+setup_my_tree()
+{
+	## Get URL and own tree directory name (for selecting install destination ~/) 
+	full_url=https://github.com/$1
+	own_tree_dir_name=`echo $1 | cut -d '/' -f 2 | cut -d '.' -f 1`	
+
 	## Download your own tree
-	#git clone URL
+	git clone $full_url ~/$own_tree_dir_name >> $own_tree_stdout_path 2>> $own_tree_stderr_path &
+	waiting "Downloading $own_tree_dir_name"
+	echo -e "\r${CHECK_MARK} Downloading $own_tree_dir_name " 
 
 	## Build
+	cd ~/$own_tree_dir_name
+	./build.sh >> $own_tree_stdout_path 2>> $own_tree_stderr_path &
+	waiting "Building $own_tree_dir_name"
+	echo -e "\r${CHECK_MARK} Building $own_tree_dir_name " 
+	cd - &> /dev/null
 
 	## Add bin path and lib path
+	add_path "$own_tree_dir_name"
+	add_lib "$own_tree_dir_name"
 
-#}
+	echo -e "--\e[1;92m$own_tree_dir_name setup completed\e[0m" #92:Light green
+}
 
