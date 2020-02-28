@@ -91,6 +91,20 @@ setup_ivp()
 	## Add path to bashrc
 	add_path "moos-ivp"
 
+	## Add script path for GenMOOSApp
+	str=`grep "export PATH" ~/.bashrc`
+	num=`grep -n "export PATH" ~/.bashrc | cut -d ':' -f 1`
+	check_script=`echo $str | grep scripts | wc -l`
+
+	if [ $check_script == 0 ]
+	then
+	    # rm path
+	    sed -i ${num}d ~/.bashrc &> /dev/null
+
+	    # write path back
+	    echo -e "$str:/home/$user/moos-ivp/scripts" >> ~/.bashrc	  
+	fi
+
 	echo -e "--\e[1;92mmoos-ivp setup completed\e[0m" #92:Light green
 }
 
@@ -137,6 +151,7 @@ setup_aquaticus()
 
 setup_UAL()
 {
+
 	## Install package
 	pkg_install "${UAL_pkg_list[*]}" "$UAL_stdout_path" "$UAL_stderr_path" &
 	waiting "Installing moos-ivp-UAL dependencies"
@@ -156,7 +171,7 @@ setup_UAL()
 	./build.sh >> $UAL_stdout_path 2>> $UAL_stderr_path &
 	waiting "Building moos-ivp-UAL"
 	echo -e "\r${CHECK_MARK} Building moos-ivp-UAL " 
-	cd -
+	cd - &> /dev/null
 
 	## Add path to bashrc
 	add_path "moos-ivp-UAL"
@@ -166,9 +181,16 @@ setup_UAL()
 
 
 #-------------------------------------------------------
-#  Part 1: Setup moos-ivp-UAL
+#  Part 1: Setup moos-ivp-own-tree
 #-------------------------------------------------------
 #setup_user()
 #{
+	## Download your own tree
+	#git clone URL
+
+	## Build
+
+	## Add bin path and lib path
+
 #}
 
