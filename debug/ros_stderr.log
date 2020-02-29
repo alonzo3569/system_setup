@@ -1,4 +1,4 @@
-Executing: /tmp/apt-key-gpghome.boj7Kh7WwC/gpg.1.sh --keyserver hkp://kegpg: key F42ED6FBAB17C654: "Open Robotics <info@osrfoundation.org>" not changed
+Executing: /tmp/apt-key-gpghome.Q3ILDmcsmH/gpg.1.sh --keyserver hkp://kegpg: key F42ED6FBAB17C654: "Open Robotics <info@osrfoundation.org>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 
@@ -12,7 +12,7 @@ Hit:2 http://tw.archive.ubuntu.com/ubuntu bionic-updates InRelease
 Hit:3 http://tw.archive.ubuntu.com/ubuntu bionic-backports InRelease
 Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
 Hit:5 http://packages.ros.org/ros/ubuntu bionic InRelease
-Fetched 88.7 kB in 2s (45.2 kB/s)
+Fetched 88.7 kB in 2s (44.5 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -33,12 +33,12 @@ The following packages were automatically installed and are no longer required:
   usb-creator-common
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.
-
-Building dependency tree...
-Reading state information...
 ERROR: default sources list file already exists:
 	/etc/ros/rosdep/sources.list.d/20-default.list
 Please delete if you wish to re-initialize
+
+Building dependency tree...
+Reading state information...
 47 packages can be upgraded. Run 'apt list --upgradable' to see them.
 reading in sources list data from /etc/ros/rosdep/sources.list.d
 Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml
@@ -62,3 +62,14 @@ Skip end-of-life distro "lunar"
 Add distro "melodic"
 Add distro "noetic"
 updated cache in /home/logan/.ros/rosdep/sources.cache
+Base path: /home/logan/catkin_ws
+Source space: /home/logan/catkin_ws/src
+Build space: /home/logan/catkin_ws/build
+Devel space: /home/logan/catkin_ws/devel
+Install space: /home/logan/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/logan/catkin_ws/build"
+####
+####
+#### Running command: "make -j1 -l1" in "/home/logan/catkin_ws/build"
+####

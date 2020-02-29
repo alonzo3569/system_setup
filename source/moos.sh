@@ -6,9 +6,6 @@
 ivp_pkg_list=(g++ cmake xterm libfltk1.3-dev freeglut3-dev libpng-dev libjpeg-dev libxft-dev libxinerama-dev libtiff5-dev subversion)
 UAL_pkg_list=(libfftw3-dev libfftw3-doc libasound2-dev)
 
-#. /home/logan/system_setup/source/main.sh # from main.sh
-# export from interface.sh
-
 
 #-------------------------------------------------------
 #  Part 1: Functions
@@ -147,12 +144,12 @@ setup_aquaticus()
 	./build.sh >> $aqua_stdout_path 2>> $aqua_stderr_path &
 	waiting "Building moos-ivp-aquaticus"
 	echo -e "\r${CHECK_MARK} Building moos-ivp-aquaticus " 
-	cd -
+	cd - &> /dev/null
 
 	## Add path to bashrc
 	add_path "moos-ivp-aquaticus"
 
-	echo -e "--\e[1;92mmoos-ivp setup completed\e[0m" #92:Light green
+	echo -e "--\e[1;92mmoos-ivp-aquaticus setup completed\e[0m" #92:Light green
 }
 
 #-------------------------------------------------------
@@ -186,7 +183,7 @@ setup_UAL()
 	## Add path to bashrc
 	add_path "moos-ivp-UAL"
 
-	echo -e "--\e[1;92mmoos-ivp setup completed\e[0m" #92:Light green
+	echo -e "--\e[1;92mmoos-ivp-UAL setup completed\e[0m" #92:Light green
 }
 
 

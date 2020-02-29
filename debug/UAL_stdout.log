@@ -1,37 +1,23 @@
 Reading package lists...
 Building dependency tree...
 Reading state information...
+libasound2-dev is already the newest version (1.1.3-5ubuntu0.2).
 The following packages were automatically installed and are no longer required:
   fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
   gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
-  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
-  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
-  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
-  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
-  libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
-  libfreerdp-client2-2 libfreerdp2-2 libgc1c2 libgee-0.8-2 libgexiv2-2
-  libgom-1.0-0 libgpgmepp6 libgpod-common libgpod4 liblangtag-common
-  liblangtag1 liblirc-client0 liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1
-  libodfgen-0.1-1 libqqwing2v5 libraw16 librevenge-0.0-0 libsgutils2-2
-  libssh-4 libsuitesparseconfig5 libvncclient1 libwinpr2-2 libxapian30
-  libxmlsec1 libxmlsec1-nss lp-solve media-player-info python3-mako
-  python3-markupsafe syslinux syslinux-common syslinux-legacy
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libcdr-0.1-1 libclucene-contribs1v5
+  libclucene-core1v5 libcmis-0.5-5v5 libcolamd2 libdazzle-1.0-0
+  libe-book-0.1-1 libedataserverui-1.2-2 libeot0 libepubgen-0.1-1
+  libetonyek-0.1-1 libevent-2.1-6 libexiv2-14 libfreerdp-client2-2
+  libfreerdp2-2 libgc1c2 libgee-0.8-2 libgexiv2-2 libgom-1.0-0 libgpgmepp6
+  libgpod-common libgpod4 liblangtag-common liblangtag1 liblirc-client0
+  liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5
+  librevenge-0.0-0 libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss lp-solve media-player-info
+  python3-mako python3-markupsafe syslinux syslinux-common syslinux-legacy
   usb-creator-common
 Use 'sudo apt autoremove' to remove them.
-Suggested packages:
-  libasound2-doc
-The following NEW packages will be installed:
-  libasound2-dev
-0 upgraded, 1 newly installed, 0 to remove and 53 not upgraded.
-Need to get 123 kB of archives.
-After this operation, 664 kB of additional disk space will be used.
-Get:1 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasound2-dev amd64 1.1.3-5ubuntu0.2 [123 kB]
-Fetched 123 kB in 0s (1038 kB/s)
-Selecting previously unselected package libasound2-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127944 files and directories currently installed.)
-Preparing to unpack .../libasound2-dev_1.1.3-5ubuntu0.2_amd64.deb ...
-Unpacking libasound2-dev:amd64 (1.1.3-5ubuntu0.2) ...
-Setting up libasound2-dev:amd64 (1.1.3-5ubuntu0.2) ...
+0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.
 A    /home/logan/moos-ivp-UAL/bin
 A    /home/logan/moos-ivp-UAL/bin/MyGenMOOSApp
 A    /home/logan/moos-ivp-UAL/build

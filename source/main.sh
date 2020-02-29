@@ -29,6 +29,15 @@ startup()
 	echo "  MOOS, ROS and other ubuntu utils such as vim,"
 	echo "  anaconda, google automatically."
 	echo
+#	echo Options:                                                        
+#	echo "  q) Press q to quit current page or program."       
+#	echo                             
+#	echo Contact:         
+#	echo "  Contact email below if u have any question.  "
+#	echo "  Name : Logan Zhang                           "
+#	echo "  ORGN : NTU                                   "
+#	echo "  Email: r07525074@ntu.edu.tw                  "
+#	echo    
 	echo -e "\e[1;33mHello $user! \e[0m"
 
 }
@@ -121,15 +130,19 @@ add_remove()
 
 final_check_install()
 {
+	error=0
+	success=0
 	# If ivp is on install list, then check
 	if [ "$1" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp`" == /home/$user/moos-ivp ] && \
 	 	   [ "`which MOOSDB`" == /home/$user/moos-ivp/bin/MOOSDB ] && \
 	 	   [ "`cat $ivp_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
-			echo -e "\t${CHECK_MARK} moos-ivp: success"
+			echo -e "  ${CHECK_MARK} moos-ivp: success"
+			((success++))
 		else
-			echo -e "\t--\e[1;31mmoos-ivp: FAILED!!\e[0m"
+			echo -e "  \e[1;31mmoos-ivp: FAILED!!\e[0m"
+			((error++))
 		fi
 	fi 
 
@@ -139,9 +152,11 @@ final_check_install()
 	 	   [ "`which iM200`" == /home/$user/moos-ivp-aquaticus/bin/iM200 ]
 	 	   [ "`cat $aqua_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
-			echo -e "\t${CHECK_MARK} moos-ivp-aquaticus: success"
+			echo -e "  ${CHECK_MARK} moos-ivp-aquaticus: success"
+			((success++))
 		else
-			echo -e "\t--\e[1;31mmoos-ivp-aquaticus: FAILED!!\e[0m"
+			echo -e "  \e[1;31mmoos-ivp-aquaticus: FAILED!!\e[0m"
+			((error++))
 		fi
 	fi 
 
@@ -151,9 +166,11 @@ final_check_install()
 	 	   [ "`which pStoreSound`" == /home/logan/moos-ivp-UAL/bin/pStoreSound ]
 	 	   [ "`cat $UAL_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
-			echo -e "\t${CHECK_MARK} moos-ivp-UAL: success"
+			echo -e "  ${CHECK_MARK} moos-ivp-UAL: success"
+			((success++))
 		else
-			echo -e "\t--\e[1;31mmoos-ivp-UAL: FAILED!!\e[0m"
+			echo -e "  \e[1;31mmoos-ivp-UAL: FAILED!!\e[0m"
+			((error++))
 		fi
 	fi 
 
@@ -162,9 +179,11 @@ final_check_install()
 		if [ "`find ~/ -name $own_tree_dir_name`" == /home/$user/$own_tree_dir_name ] && \
 	 	   [ "`cat $own_tree_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
-			echo -e "\t${CHECK_MARK} $own_tree_dir_name: success"
+			echo -e "  ${CHECK_MARK} $own_tree_dir_name: success"
+			((success++))
 		else
-			echo -e "\t--\e[1;31$own_tree_dir_name: FAILED!!\e[0m"
+			echo -e "  \e[1;31$own_tree_dir_name: FAILED!!\e[0m"
+			((error++))
 		fi
 	fi 
 
@@ -172,18 +191,17 @@ final_check_install()
 	if [ "$5" = true ] ; then 
 		if [ "`which roscore`" == /opt/ros/melodic/bin/roscore ]
 		  then
-			echo -e "\t${CHECK_MARK} ROS Melodic: success"
+			echo -e "  ${CHECK_MARK} ROS Melodic: success"
+			((success++))
 		else
-			echo -e "\t--\e[1;31mROS Melodic: FAILED!!\e[0m"
+			echo -e "  \e[1;31mROS Melodic: FAILED!!\e[0m"
+			((error++))
 		fi
 	fi 
-
+	
+	# print result
+	echo
+	echo -e "* $success directories installed. $error errors detected."
 
 }
-
-
-
-
-
-
 

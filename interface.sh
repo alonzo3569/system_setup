@@ -73,8 +73,7 @@ do
 	echo -e "1)  moos-ivp/aquaticus/UAL"
 	echo -e "2)  moos-ivp-your-own-tree"
 	echo -e "3)  ROS Melodic"
-	echo -e "4)  Ubuntu application"
-	echo -e "5)  Start installation process"
+	echo -e "4)  Start installation process"
 
 	read choices
 	case $choices in
@@ -198,7 +197,7 @@ do
 #-------------------------------------------------------
 #  Part 1: Main option 5 (Start installation process)
 #-------------------------------------------------------
-	5)   
+	4)   
 	# Main option 5 case
 	clear_screen
 	echo -e "\e[1;31mStart installation process\e[0m\e[1;5;31m... \e[0m"
@@ -236,11 +235,18 @@ do
 
 	# Check installation result
 	source ~/.bashrc
-	echo -e "\r${CHECK_MARK} All process completed"
-	echo -e "--\e[1;92mStart checking... \e[0m" #92:Light green
+	echo -e "\e[1;33m${CHECK_MARK} All process completed\e[0m"
+	sleep 1
+	clear_screen
+	echo -e "\e[1;34m${CHECK_MARK} All process completed\e[0m"
+	echo -e "--\e[1;33mCheck results... \e[0m" #92:Light green
 
 	final_check_install "$setup_ivp" "$setup_aquaticus" "$setup_UAL" "$setup_own_tree" "$setup_ros"
-	
+
+	echo
+	echo -e "\e[94mThank you for using Alonzo Setup Wizard!\e[0m"
+	echo -e "\e[94mContact email below if any problem occured.\e[0m"
+	echo -e "\e[94mEmail: r07525074@ntu.edu.tw\e[0m"
 	exit
 	;;
 
