@@ -21,3 +21,4 @@ fatal: destination path '/home/logan' already exists and is not an empty directo
 /home/logan/system_setup/source/moos.sh: line 222: ./build.sh: No such file or directory
 fatal: destination path '/home/logan/moos-ivp-logan' already exists and is not an empty directory.
 fatal: destination path '/home/logan/moos-ivp-logan' already exists and is not an empty directory.
+fatal: destination path '/home/logan/moos-ivp-logan' already exists and is not an empty directory.

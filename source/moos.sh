@@ -6,18 +6,6 @@
 ivp_pkg_list=(g++ cmake xterm libfltk1.3-dev freeglut3-dev libpng-dev libjpeg-dev libxft-dev libxinerama-dev libtiff5-dev subversion)
 UAL_pkg_list=(libfftw3-dev libfftw3-doc libasound2-dev)
 
-ivp_stdout_path=`find ~/ -name "ivp_stdout.log"`
-ivp_stderr_path=`find ~/ -name "ivp_stderr.log"`
-
-aqua_stdout_path=`find ~/ -name "aqua_stdout.log"`
-aqua_stderr_path=`find ~/ -name "aqua_stderr.log"`
-
-UAL_stdout_path=`find ~/ -name "UAL_stdout.log"`
-UAL_stderr_path=`find ~/ -name "UAL_stderr.log"`
-
-own_tree_stdout_path=`find ~/ -name "own_tree_stdout.log"`
-own_tree_stderr_path=`find ~/ -name "own_tree_stderr.log"`
-
 #. /home/logan/system_setup/source/main.sh # from main.sh
 # export from interface.sh
 
@@ -210,7 +198,7 @@ setup_my_tree()
 {
 	## Get URL and own tree directory name (for selecting install destination ~/) 
 	full_url=https://github.com/$1
-	own_tree_dir_name=`echo $1 | cut -d '/' -f 2 | cut -d '.' -f 1`	
+	export own_tree_dir_name=`echo $1 | cut -d '/' -f 2 | cut -d '.' -f 1` #(main.sh moos.sh)
 
 	## Download your own tree
 	git clone $full_url ~/$own_tree_dir_name >> $own_tree_stdout_path 2>> $own_tree_stderr_path &

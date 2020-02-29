@@ -7,6 +7,7 @@ export pwd=`pwd`
 . $pwd/source/main.sh
 . $pwd/source/log.sh
 . $pwd/source/moos.sh
+. $pwd/source/ros.sh
 
 
 #-------------------------------------------------------
@@ -22,6 +23,23 @@ export todo_list=(moos-ivp moos-ivp-aquaticus moos-ivp-UAL)
 export done_list=()
 export waiting_list=()
 setup_own_tree=false
+setup_ros=false
+setup_ivp=false
+setup_aquaticus=false
+setup_UAL=false
+
+export ivp_stdout_path=`find ~/ -name "ivp_stdout.log"` #(main.sh, moos.sh)
+export ivp_stderr_path=`find ~/ -name "ivp_stderr.log"`
+
+export aqua_stdout_path=`find ~/ -name "aqua_stdout.log"`
+export aqua_stderr_path=`find ~/ -name "aqua_stderr.log"`
+
+export UAL_stdout_path=`find ~/ -name "UAL_stdout.log"`
+export UAL_stderr_path=`find ~/ -name "UAL_stderr.log"`
+
+export own_tree_stdout_path=`find ~/ -name "own_tree_stdout.log"`
+export own_tree_stderr_path=`find ~/ -name "own_tree_stderr.log"`
+
 
 #-------------------------------------------------------
 #  Part 1: Program start
@@ -54,7 +72,7 @@ do
 	echo -e "\e[1;92mInstalltion list: \e[0m"
 	echo -e "1)  moos-ivp/aquaticus/UAL"
 	echo -e "2)  moos-ivp-your-own-tree"
-	echo -e "3)  ROS"
+	echo -e "3)  ROS Melodic"
 	echo -e "4)  Ubuntu application"
 	echo -e "5)  Start installation process"
 
@@ -103,6 +121,7 @@ do
 				# If moos-ivp in todo_list
 				# add moos-ivp to waiting_list, rm from todo_list
 				add_remove "moos-ivp"
+				setup_ivp=true
 
 				# Show list status (This should be function)
 				clear_screen
@@ -114,7 +133,7 @@ do
 				# If moos-ivp-aquaticus in todo_list
 				# add moos-ivp-aquaticus to waiting_list, rm from todo_list
 				add_remove "moos-ivp-aquaticus"
-
+				setup_aquaticus=true
 
 				# Show list status (This should be function)
 				clear_screen
@@ -126,6 +145,7 @@ do
 				# If moos-ivp-UAL in todo_list
 				# add moos-ivp-UAL to waiting_list, rm from todo_list
 				add_remove "moos-ivp-UAL"
+				setup_UAL=true
 
 				# Show list status (This should be function)
 				clear_screen
@@ -162,11 +182,19 @@ do
 	
 	# finish setup, set setup_own_tree to true
 	setup_own_tree=true
-	echo -e "\e[1;97mYour MOOS is ready to install \e[0m"
+	echo -e "\e[1;97mYour own tree is ready to install \e[0m"
 	sleep 1	
 
 	;; # end of my own tree case
-
+#-------------------------------------------------------
+#  Part 1: Main option 3 (Setup ROS Melodic)
+#-------------------------------------------------------
+	3)	
+	# set setup_ros to true
+	setup_ros=true
+	echo -e "\e[1;97mROS Melodic is ready to install \e[0m"
+	sleep 1	
+	;; # end of ROS case
 #-------------------------------------------------------
 #  Part 1: Main option 5 (Start installation process)
 #-------------------------------------------------------
@@ -200,7 +228,22 @@ do
 	if [ "$setup_own_tree" = true ] ; then
 	  setup_my_tree "$URL"
 	fi
+
+	# ROS part
+	if [ "$setup_ros" = true ] ; then
+	  setup_ros
+	fi
+
+	# Check installation result
+	source ~/.bashrc
+	echo -e "\r${CHECK_MARK} All process completed"
+	echo -e "--\e[1;92mStart checking... \e[0m" #92:Light green
+
+	final_check_install "$setup_ivp" "$setup_aquaticus" "$setup_UAL" "$setup_own_tree" "$setup_ros"
+	
+	exit
 	;;
+
 
 	
 	q) exit

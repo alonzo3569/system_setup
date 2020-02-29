@@ -1,0 +1,52 @@
+Executing: /tmp/apt-key-gpghome.9MKQXzczrT/gpg.1.sh --keyserver hkp://kegpg: key F42ED6FBAB17C654: "Open Robotics <info@osrfoundation.org>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://tw.archive.ubuntu.com/ubuntu bionic InRelease
+Get:2 http://tw.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:3 http://tw.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:5 http://packages.ros.org/ros/ubuntu bionic InRelease
+Fetched 163 kB in 2s (69.1 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+132 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[sudo] password for logan: Wrote /etc/ros/rosdep/sources.list.d/20-default.list
+Recommended: please run
+
+	rosdep update
+
+
+ERROR: Rosdep experienced an error: [Errno 28] No space left on device: '/home/logan/.ros'
+Please go to the rosdep page [1] and file a bug report with the stack trace below.
+[1] : http://www.ros.org/wiki/rosdep
+
+rosdep version: 0.18.0
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/rosdep2/main.py", line 144, in rosdep_main
+    exit_code = _rosdep_main(args)
+  File "/usr/lib/python2.7/dist-packages/rosdep2/main.py", line 426, in _rosdep_main
+    return _no_args_handler(command, parser, options, args)
+  File "/usr/lib/python2.7/dist-packages/rosdep2/main.py", line 435, in _no_args_handler
+    return command_handlers[command](options)
+  File "/usr/lib/python2.7/dist-packages/rosdep2/main.py", line 646, in command_update
+    skip_eol_distros=not options.include_eol_distros)
+  File "/usr/lib/python2.7/dist-packages/rosdep2/sources_list.py", line 478, in update_sources_list
+    retval.append((source, write_cache_file(sources_cache_dir, source.url, rosdep_data)))
+  File "/usr/lib/python2.7/dist-packages/rosdep2/cache_tools.py", line 62, in write_cache_file
+    os.makedirs(source_cache_d)
+  File "/usr/lib/python2.7/os.py", line 150, in makedirs
+    makedirs(head, mode)
+  File "/usr/lib/python2.7/os.py", line 150, in makedirs
+    makedirs(head, mode)
+  File "/usr/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 28] No space left on device: '/home/logan/.ros'
+
+
+reading in sources list data from /etc/ros/rosdep/sources.list.d
+/home/logan/system_setup/source/ros.sh: line 53: catkin_make: command not found
