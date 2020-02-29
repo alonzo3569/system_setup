@@ -4,7 +4,7 @@
 #  Part 1: Env params
 #-------------------------------------------------------
 
-ros_stdout_path=`find ~/ -name "ros_stderr.log"`
+ros_stdout_path=`find ~/ -name "ros_stdout.log"`
 ros_stderr_path=`find ~/ -name "ros_stderr.log"`
 
 #-------------------------------------------------------
@@ -18,7 +18,7 @@ setup_ros()
 {
 	## Setup your sources.list
 	echo $sudo_passwd | sudo -S sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-	echo -e "\r${CHECK_MARK} Setup ROS sources.list  "
+	echo -e "\r${CHECK_MARK} Setup ROS sources.list                     "
 
 	## Set up your keys
 	echo $sudo_passwd | sudo -S apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 > $ros_stdout_path 2> $ros_stderr_path &

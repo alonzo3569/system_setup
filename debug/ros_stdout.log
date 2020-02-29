@@ -1,0 +1,67 @@
+Executing: /tmp/apt-key-gpghome.nkkS6hdyeG/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+Reading package lists...Hit:1 http://tw.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://tw.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://tw.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:5 http://packages.ros.org/ros/ubuntu bionic InRelease
+Fetched 88.7 kB in 3s (28.6 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ros-melodic-desktop-full is already the newest version (1.4.1-0bionic.20200130.024635).
+The following packages were automatically installed and are no longer required:
+  fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libcdr-0.1-1 libclucene-contribs1v5
+  libclucene-core1v5 libcmis-0.5-5v5 libcolamd2 libdazzle-1.0-0
+  libe-book-0.1-1 libedataserverui-1.2-2 libeot0 libepubgen-0.1-1
+  libetonyek-0.1-1 libevent-2.1-6 libexiv2-14 libfreerdp-client2-2
+  libfreerdp2-2 libgc1c2 libgee-0.8-2 libgexiv2-2 libgom-1.0-0 libgpgmepp6
+  libgpod-common libgpod4 liblangtag-common liblangtag1 liblirc-client0
+  liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5
+  librevenge-0.0-0 libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss lp-solve media-player-info
+  python3-mako python3-markupsafe syslinux syslinux-common syslinux-legacy
+  usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+
+Building dependency tree...ERROR: default sources list file already exists:
+	/etc/ros/rosdep/sources.list.d/20-default.list
+Please delete if you wish to re-initialize
+
+Reading state information...
+22 packages can be upgraded. Run 'apt list --upgradable' to see them.
+reading in sources list data from /etc/ros/rosdep/sources.list.d
+Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml
+Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml
+Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml
+Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml
+Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml
+Query rosdistro index https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
+Skip end-of-life distro "ardent"
+Skip end-of-life distro "bouncy"
+Skip end-of-life distro "crystal"
+Add distro "dashing"
+Add distro "eloquent"
+Add distro "foxy"
+Skip end-of-life distro "groovy"
+Skip end-of-life distro "hydro"
+Skip end-of-life distro "indigo"
+Skip end-of-life distro "jade"
+Add distro "kinetic"
+Skip end-of-life distro "lunar"
+Add distro "melodic"
+Add distro "noetic"
+updated cache in /home/ual-logan/.ros/rosdep/sources.cache
+Base path: /home/ual-logan/catkin_ws
+Source space: /home/ual-logan/catkin_ws/src
+Build space: /home/ual-logan/catkin_ws/build
+Devel space: /home/ual-logan/catkin_ws/devel
+Install space: /home/ual-logan/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/ual-logan/catkin_ws/build"
+####
+####
+#### Running command: "make -j1 -l1" in "/home/ual-logan/catkin_ws/build"
+####
