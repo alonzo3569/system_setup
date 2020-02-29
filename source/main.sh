@@ -149,7 +149,7 @@ final_check_install()
 	# If aquaticus is on install list, then check
 	if [ "$2" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp-aquaticus`" == /home/$user/moos-ivp-aquaticus ] && \
-	 	   [ "`which iM200`" == /home/$user/moos-ivp-aquaticus/bin/iM200 ]
+	 	   [ "`which iM200`" == /home/$user/moos-ivp-aquaticus/bin/iM200 ] && \
 	 	   [ "`cat $aqua_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "  ${CHECK_MARK} moos-ivp-aquaticus: success"
@@ -163,7 +163,7 @@ final_check_install()
 	# If UAL is on install list, then check
 	if [ "$3" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp-UAL`" == /home/$user/moos-ivp-UAL ] && \
-	 	   [ "`which pStoreSound`" == /home/$user/moos-ivp-UAL/bin/pStoreSound ]
+	 	   [ "`which pStoreSound`" == /home/$user/moos-ivp-UAL/bin/pStoreSound ] && \
 	 	   [ "`cat $UAL_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "  ${CHECK_MARK} moos-ivp-UAL: success"
