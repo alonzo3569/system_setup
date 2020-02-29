@@ -201,7 +201,7 @@ do
 	5)   
 	# Main option 5 case
 	clear_screen
-	echo -e "\e[1;31mStart \e[0m\e[1;5;31minstalling... \e[0m"
+	echo -e "\e[1;31mStart installation process\e[0m\e[1;5;31m... \e[0m"
 
 	# ivp, aquaticus and UAL part
 	#echo waiting_list size ${#waiting_list[@]}

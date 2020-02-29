@@ -125,11 +125,11 @@ final_check_install()
 	if [ "$1" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp`" == /home/$user/moos-ivp ] && \
 	 	   [ "`which MOOSDB`" == /home/$user/moos-ivp/bin/MOOSDB ] && \
-	 	   [ "`cat $ivp_stdout_path | grep "[100%] Built target" | wc -l`" != 0 ]
+	 	   [ "`cat $ivp_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "\t${CHECK_MARK} moos-ivp: success"
 		else
-			echo -e "\t${CHECK_MARK} moos-ivp: FAILED!!"
+			echo -e "\t--\e[1;31mmoos-ivp: FAILED!!\e[0m"
 		fi
 	fi 
 
@@ -137,11 +137,11 @@ final_check_install()
 	if [ "$2" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp-aquaticus`" == /home/$user/moos-ivp-aquaticus ] && \
 	 	   [ "`which iM200`" == /home/$user/moos-ivp-aquaticus/bin/iM200 ]
-	 	   [ "`cat $aqua_stdout_path | grep "[100%] Built target" | wc -l`" != 0 ]
+	 	   [ "`cat $aqua_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "\t${CHECK_MARK} moos-ivp-aquaticus: success"
 		else
-			echo -e "\t--\e[1;31moos-ivp-aquaticus: FAILED!!\e[0m"
+			echo -e "\t--\e[1;31mmoos-ivp-aquaticus: FAILED!!\e[0m"
 		fi
 	fi 
 
@@ -149,18 +149,18 @@ final_check_install()
 	if [ "$3" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp-UAL`" == /home/$user/moos-ivp-UAL ] && \
 	 	   [ "`which pStoreSound`" == /home/logan/moos-ivp-UAL/bin/pStoreSound ]
-	 	   [ "`cat $UAL_stdout_path | "grep [100%] Built target" | wc -l`" != 0 ]
+	 	   [ "`cat $UAL_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "\t${CHECK_MARK} moos-ivp-UAL: success"
 		else
-			echo -e "\t--\e[1;31moos-ivp-UAL: FAILED!!\e[0m"
+			echo -e "\t--\e[1;31mmoos-ivp-UAL: FAILED!!\e[0m"
 		fi
 	fi 
 
 	# If my tree is on install list, then check
 	if [ "$4" = true ] ; then 
 		if [ "`find ~/ -name $own_tree_dir_name`" == /home/$user/$own_tree_dir_name ] && \
-	 	   [ "`cat $own_tree_stdout_path | "grep [100%] Built target" | wc -l`" != 0 ]
+	 	   [ "`cat $own_tree_stdout_path | grep -i "\[100%] Built target" | wc -l`" != 0 ]
 		  then
 			echo -e "\t${CHECK_MARK} $own_tree_dir_name: success"
 		else
@@ -170,7 +170,7 @@ final_check_install()
 
 	# If ros is on install list, then check
 	if [ "$5" = true ] ; then 
-		if [ "`which roscore`" == /opt/ros/melodic/roscore ]
+		if [ "`which roscore`" == /opt/ros/melodic/bin/roscore ]
 		  then
 			echo -e "\t${CHECK_MARK} ROS Melodic: success"
 		else
