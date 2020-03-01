@@ -236,15 +236,15 @@ do
 	  
 	  # Check if deamon apt.systemd.daily update is running 
 	  # Error: Could not get lock /var/lib/dpkg/lock-frontend
-		if [ "`ps aux | grep -i apt | wc -l`" > 1 ] ; then
-		  echo -e "\e[31m apt.systemd.daily is currently running. \e[0m" 
-		  echo -e "\e[31m Please install ROS later. \e[0m" 
-		  echo -e "Error: Could not get lock /var/lib/dpkg/lock-frontend" >> $ros_stderr_path
-		  sleep 3
-		else 
-		  setup_ros
+	  if [ "`ps aux | grep -i apt | wc -l`" > 1 ] ; then
+	    echo -e "\e[31m apt.systemd.daily is currently running. \e[0m" 
+	    echo -e "\e[31m Please install ROS later. \e[0m" 
+	    echo -e "Error: Could not get lock /var/lib/dpkg/lock-frontend" >> $ros_stderr_path
+	    sleep 3
+	  else 
+	    setup_ros
 
-		if
+	  if
 	fi
 
 	# Check installation result

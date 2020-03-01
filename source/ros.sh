@@ -4,9 +4,6 @@
 #  Part 1: Env params
 #-------------------------------------------------------
 
-ros_stdout_path=`find ~/ -name "ros_stdout.log"`
-ros_stderr_path=`find ~/ -name "ros_stderr.log"`
-
 #-------------------------------------------------------
 #  Part 1: Functions
 #-------------------------------------------------------

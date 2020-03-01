@@ -135,7 +135,8 @@ final_check_install()
 	success=0
 
 	# import env to current shell (sub-shell)
-	source ~/.bashrc
+	moos_path=`cat ~/.bashrc | grep "export PATH"
+	$moos_path
 
 	# If ivp is on install list, then check
 	if [ "$1" = true ] ; then 
