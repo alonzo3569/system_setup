@@ -40,6 +40,9 @@ export UAL_stderr_path=`find ~/ -name "UAL_stderr.log"`
 export own_tree_stdout_path=`find ~/ -name "own_tree_stdout.log"`
 export own_tree_stderr_path=`find ~/ -name "own_tree_stderr.log"`
 
+export ros_stdout_path=`find ~/ -name "ros_stdout.log"` #(interface.sh ros.sh)
+export ros_stderr_path=`find ~/ -name "ros_stderr.log"`
+
 
 #-------------------------------------------------------
 #  Part 1: Program start
@@ -230,7 +233,18 @@ do
 
 	# ROS part
 	if [ "$setup_ros" = true ] ; then
-	  setup_ros
+	  
+	  # Check if deamon apt.systemd.daily update is running 
+	  # Error: Could not get lock /var/lib/dpkg/lock-frontend
+		if [ "`ps aux | grep -i apt | wc -l`" > 1 ] ; then
+		  echo -e "\e[31m apt.systemd.daily is currently running. \e[0m" 
+		  echo -e "\e[31m Please install ROS later. \e[0m" 
+		  echo -e "Error: Could not get lock /var/lib/dpkg/lock-frontend" >> $ros_stderr_path
+		  sleep 3
+		else 
+		  setup_ros
+
+		if
 	fi
 
 	# Check installation result

@@ -17,7 +17,7 @@ The following packages were automatically installed and are no longer required:
   python3-mako python3-markupsafe syslinux syslinux-common syslinux-legacy
   usb-creator-common
 Use 'sudo apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
 A    /home/logan/moos-ivp-UAL/bin
 A    /home/logan/moos-ivp-UAL/bin/MyGenMOOSApp
 A    /home/logan/moos-ivp-UAL/build
