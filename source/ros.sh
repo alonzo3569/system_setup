@@ -29,7 +29,7 @@ setup_ros()
 	echo $sudo_passwd | sudo -S apt update >> $ros_stdout_path 2>> $ros_stderr_path &
 
 	## Install ros
-	echo $sudo_passwd | sudo -S apt --assume-yes install ros-melodic-desktop-full >> $ros_stdout_path 2>> $ros_stderr_path &
+	echo $sudo_passwd | sudo -S apt --assume-yes install ros-melodic-desktop-full #>> $ros_stdout_path 2>> $ros_stderr_path &
 	waiting "Installing ROS Meodic"
 	echo -e "\r${CHECK_MARK} Installing ROS Meodic " 
 

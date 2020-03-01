@@ -130,8 +130,13 @@ add_remove()
 
 final_check_install()
 {
+	# init counter	
 	error=0
 	success=0
+
+	# import env to current shell (sub-shell)
+	source ~/.bashrc
+
 	# If ivp is on install list, then check
 	if [ "$1" = true ] ; then 
 		if [ "`find ~/ -name moos-ivp`" == /home/$user/moos-ivp ] && \

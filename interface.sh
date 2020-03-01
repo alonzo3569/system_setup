@@ -234,7 +234,6 @@ do
 	fi
 
 	# Check installation result
-	source ~/.bashrc
 	echo -e "\e[1;33m${CHECK_MARK} All process completed\e[0m"
 	sleep 1
 	clear_screen
