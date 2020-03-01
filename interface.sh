@@ -261,7 +261,7 @@ do
 	echo -e "\e[94mThank you for using Alonzo Setup Wizard!\e[0m"
 	echo -e "\e[94mContact email below if any problem occured.\e[0m"
 	echo -e "\e[94mEmail: r07525074@ntu.edu.tw\e[0m"
-	#exit
+	exit
 	;;
 
 

@@ -24,6 +24,8 @@ setup_ros()
 
 	## Check if Debian package index is up-to-date
 	echo $sudo_passwd | sudo -S apt update >> $ros_stdout_path 2>> $ros_stderr_path &
+	waiting "Updating Debian package"
+	echo -e "\r${CHECK_MARK} Updating Debian package " 
 
 	## Install ros
 	echo $sudo_passwd | sudo -S apt --assume-yes install ros-melodic-desktop-full #>> $ros_stdout_path 2>> $ros_stderr_path &
