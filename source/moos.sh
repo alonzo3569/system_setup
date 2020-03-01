@@ -8,7 +8,7 @@ UAL_pkg_list=(libfftw3-dev libfftw3-doc libasound2-dev)
 
 
 #-------------------------------------------------------
-#  Part 1: Functions
+#  Part 2: Functions
 #-------------------------------------------------------
 pkg_install()
 {
@@ -67,7 +67,7 @@ add_lib()
 
 
 #-------------------------------------------------------
-#  Part 1: Setup moos-ivp
+#  Part 3: Setup moos-ivp
 #-------------------------------------------------------
 
 setup_ivp()
@@ -117,7 +117,7 @@ setup_ivp()
 
 
 #-------------------------------------------------------
-#  Part 1: Setup moos-ivp-aquaticus
+#  Part 4: Setup moos-ivp-aquaticus
 #-------------------------------------------------------
 
 setup_aquaticus()
@@ -153,7 +153,7 @@ setup_aquaticus()
 }
 
 #-------------------------------------------------------
-#  Part 1: Setup moos-ivp-UAL
+#  Part 5: Setup moos-ivp-UAL
 #-------------------------------------------------------
 
 setup_UAL()
@@ -188,7 +188,7 @@ setup_UAL()
 
 
 #-------------------------------------------------------
-#  Part 1: Setup moos-ivp-own-tree
+#  Part 6: Setup moos-ivp-own-tree
 #-------------------------------------------------------
 
 setup_my_tree()

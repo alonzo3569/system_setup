@@ -1,18 +1,25 @@
-Executing: /tmp/apt-key-gpghome.ci0SLuG7MU/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+Executing: /tmp/apt-key-gpghome.wxtfg8BctS/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 Hit:1 http://tw.archive.ubuntu.com/ubuntu bionic InRelease
 Get:2 http://tw.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
 Get:3 http://tw.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-Hit:4 http://packages.ros.org/ros/ubuntu bionic InRelease
-Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-Get:6 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [307 kB]
-Get:7 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB]
-Get:8 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [140 kB]
-Get:9 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [264 kB]
-Get:10 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [197 kB]
-Get:11 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [446 kB]
-Get:12 http://tw.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2468 B]
-Get:13 http://tw.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7980 B]
-Fetched 1690 kB in 4s (461 kB/s)
+Get:4 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [307 kB]
+Get:5 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB]
+Get:6 http://tw.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [140 kB]
+Get:7 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [264 kB]
+Get:8 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [201 kB]
+Get:9 http://tw.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [453 kB]
+Get:10 http://tw.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2468 B]
+Hit:11 http://packages.ros.org/ros/ubuntu bionic InRelease
+Get:12 http://tw.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7980 B]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [38.6 kB]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 48x48 Icons [17.6 kB]
+Get:16 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 64x64 Icons [41.5 kB]
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [42.1 kB]
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [16.4 kB]
+Get:19 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [111 kB]
+Get:20 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2464 B]
+Fetched 1970 kB in 2s (807 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...

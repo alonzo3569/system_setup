@@ -11,7 +11,7 @@ export pwd=`pwd`
 
 
 #-------------------------------------------------------
-#  Part 1: Env params
+#  Part 2: Env params
 #-------------------------------------------------------
 export user=`whoami`
 export host=`hostname`
@@ -45,7 +45,7 @@ export ros_stderr_path=`find ~/ -name "ros_stderr.log"`
 
 
 #-------------------------------------------------------
-#  Part 1: Program start
+#  Part 3: Program start
 #-------------------------------------------------------
 startup
 printf "\e[37mPlease enter sudo password: \e[0m"
@@ -53,7 +53,7 @@ read sudo_passwd
 export sudo_passwd
 
 #-------------------------------------------------------
-#  Part 1: Setup logfile
+#  Part 4: Setup logfile
 #-------------------------------------------------------
 
 # Edit logfile header
@@ -62,12 +62,12 @@ header=`log_header`
 echo "$header" >> $user_info
 
 #-------------------------------------------------------
-#  Part 1: Backup bashrc
+#  Part 5: Backup bashrc
 #-------------------------------------------------------
 cp -rp ~/.bashrc ~/.bashrc_backup
 
 #-------------------------------------------------------
-#  Part 1: Main option
+#  Part 6: Main option
 #-------------------------------------------------------
 while :
 do 
@@ -81,7 +81,7 @@ do
 	read choices
 	case $choices in
 #-------------------------------------------------------
-#  Part 1: Main option 1 (MOOS installation page)
+#  Part 7: Main option 1 (MOOS installation page)
 #-------------------------------------------------------
 	1)
 	# Check installed app
@@ -163,7 +163,7 @@ do
 	;;
 
 #-------------------------------------------------------
-#  Part 1: Main option 2 (Setup my own tree)
+#  Part 8: Main option 2 (Setup my own tree)
 #-------------------------------------------------------
 	2)
 	# If setup_own_tree=true, back to Main page
@@ -189,7 +189,7 @@ do
 
 	;; # end of my own tree case
 #-------------------------------------------------------
-#  Part 1: Main option 3 (Setup ROS Melodic)
+#  Part 9: Main option 3 (Setup ROS Melodic)
 #-------------------------------------------------------
 	3)	
 	# set setup_ros to true
@@ -198,7 +198,7 @@ do
 	sleep 1	
 	;; # end of ROS case
 #-------------------------------------------------------
-#  Part 1: Main option 5 (Start installation process)
+#  Part 10: Main option 5 (Start installation process)
 #-------------------------------------------------------
 	4)   
 	# Main option 5 case
@@ -258,9 +258,13 @@ do
 	final_check_install "$setup_ivp" "$setup_aquaticus" "$setup_UAL" "$setup_own_tree" "$setup_ros"
 
 	echo
+	echo
+	echo -e "${CHECK_MARK} Please close terminal or source ~/.bashrc!"
+	echo -e "\e[94m==============================================\e[0m"
 	echo -e "\e[94mThank you for using Alonzo Setup Wizard!\e[0m"
 	echo -e "\e[94mContact email below if any problem occured.\e[0m"
 	echo -e "\e[94mEmail: r07525074@ntu.edu.tw\e[0m"
+	echo -e "\e[94m==============================================\e[0m"
 	exit
 	;;
 
@@ -269,9 +273,6 @@ do
 	q) exit
 	;;
 	esac # end of Main option 1 case
-#-------------------------------------------------------
-#  Part 1: Source bash
-#-------------------------------------------------------
-#source ~/.bashrc
+
 done # end of Main option while
 

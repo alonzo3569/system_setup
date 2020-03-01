@@ -329,3 +329,15 @@ Scanning dependencies of target uSimMarineX_HWGR
 [ 92%] Building CXX object src/uSimMarineX_HWGR/CMakeFiles/uSimMarineX_HWGR.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../bin/uSimMarineX_HWGR
 [100%] Built target uSimMarineX_HWGR
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/logan/moos-ivp-logan/build
+[  7%] Built target BHV_Pulse
+[ 14%] Built target BHV_test
+[ 22%] Built target BHV_ZigLeg
+[ 29%] Built target BHV_rotate_lawnmower
+[ 37%] Built target BHV_circle_sine
+[ 44%] Built target BHV_sine
+[ 51%] Built target BHV_Lawnmower
+[ 70%] Built target pPoseKeepingX
+[100%] Built target uSimMarineX_HWGR

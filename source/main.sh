@@ -1,9 +1,6 @@
 #!/bin/bash
 
 #-------------------------------------------------------
-#  Part 1: Env params
-#-------------------------------------------------------
-#-------------------------------------------------------
 #  Part 1: Functions
 #-------------------------------------------------------
 show_list()
@@ -29,6 +26,11 @@ startup()
 	echo "  MOOS, ROS and other ubuntu utils such as vim,"
 	echo "  anaconda, google automatically."
 	echo
+#	echo CONTACT:                                        
+#	echo "----------------------------------------------"
+#	echo -e "\e[94mThank you for using Alonzo Setup Wizard!\e[0m"
+#	echo -e "\e[94mContact email below if any problem occured.\e[0m"
+#	echo -e "\e[94mEmail: r07525074@ntu.edu.tw\e[0m"
 #	echo Options:                                                        
 #	echo "  q) Press q to quit current page or program."       
 #	echo                             
@@ -206,7 +208,6 @@ final_check_install()
 	fi 
 	
 	# print result
-	echo
 	echo -e "* $success directories installed. $error errors detected."
 
 }
