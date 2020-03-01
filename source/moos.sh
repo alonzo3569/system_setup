@@ -76,22 +76,22 @@ setup_ivp()
 	#sudo_passwd="0912257655" # from main.sh
 
 	## Install package
-	pkg_install "${ivp_pkg_list[*]}" "$ivp_stdout_path" "$ivp_stderr_path" &
-	waiting "Installing moos-ivp dependencies"
+	pkg_install "${ivp_pkg_list[*]}" "$ivp_stdout_path" "$ivp_stderr_path" & #> /dev/null
+	waiting "Installing moos-ivp dependencies" 2> /dev/null
 	echo -e "\r${CHECK_MARK} Installing moos-ivp dependencies " 
 
 	## Check if ~/moos-ivp exist
 	ls ~/moos-ivp &> /dev/null || mkdir ~/moos-ivp
 
 	## Download ivp
-	svn co https://oceanai.mit.edu/svn/moos-ivp-aro/trunk/ ~/moos-ivp >> $ivp_stdout_path 2>> $ivp_stderr_path &
+	svn co https://oceanai.mit.edu/svn/moos-ivp-aro/trunk/ ~/moos-ivp >> $ivp_stdout_path 2>> $ivp_stderr_path & > /dev/null
 	waiting "Downloading moos-ivp"
 	echo -e "\r${CHECK_MARK} Downloading moos-ivp " 
 
 
 	## Build ivp
-	~/moos-ivp/build.sh >> $ivp_stdout_path 2>> $ivp_stderr_path &
-	waiting "Building moos-ivp"
+	~/moos-ivp/build.sh >> $ivp_stdout_path 2>> $ivp_stderr_path & > /dev/null
+	waiting "Building moos-ivp" 
 	echo -e "\r${CHECK_MARK} Building moos-ivp " 
 
 

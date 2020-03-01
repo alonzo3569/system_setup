@@ -240,6 +240,7 @@ do
 	    echo -e "\e[31m apt.systemd.daily is currently running. \e[0m" 
 	    echo -e "\e[31m Please install ROS later. \e[0m" 
 	    echo -e "Error: Could not get lock /var/lib/dpkg/lock-frontend" >> $ros_stderr_path
+	    setup_ros=false
 	    sleep 3
 	  else 
 	    setup_ros
@@ -260,7 +261,7 @@ do
 	echo -e "\e[94mThank you for using Alonzo Setup Wizard!\e[0m"
 	echo -e "\e[94mContact email below if any problem occured.\e[0m"
 	echo -e "\e[94mEmail: r07525074@ntu.edu.tw\e[0m"
-	exit
+	#exit
 	;;
 
 

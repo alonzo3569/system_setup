@@ -135,8 +135,14 @@ final_check_install()
 	success=0
 
 	# import env to current shell (sub-shell)
-	moos_path=`cat ~/.bashrc | grep "export PATH"`
-	$moos_path
+	export PATH=$PATH:/home/logan/moos-ivp/bin:/home/logan/moos-ivp-aquaticus/bin:/home/logan/moos-ivp-UAL/bin
+	#echo $PATH
+	#path=`cat ~/.bashrc | grep "export PATH"`
+	#echo $path
+	#source ~/.bashrc
+	#. ~/.bashrc
+	#source /home/logan/.bashrc
+	#echo $PATH
 
 	# If ivp is on install list, then check
 	if [ "$1" = true ] ; then 
