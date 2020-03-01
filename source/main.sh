@@ -138,7 +138,7 @@ final_check_install()
 
 	# import env to current shell (sub-shell)
 	# Shell script is non-interactive, it's useless to source ~/.bashrc 
-	export PATH=$PATH:/home/logan/moos-ivp/bin:/home/logan/moos-ivp-aquaticus/bin:/home/logan/moos-ivp-UAL/bin
+	export PATH=$PATH:/home/$user/moos-ivp/bin:/home/$user/moos-ivp-aquaticus/bin:/home/$user/moos-ivp-UAL/bin
 
 	# If ivp is on install list, then check
 	if [ "$1" = true ] ; then 
