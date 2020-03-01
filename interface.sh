@@ -244,7 +244,7 @@ do
 	  else 
 	    setup_ros
 
-	  if
+	  fi
 	fi
 
 	# Check installation result
