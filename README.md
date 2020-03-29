@@ -33,7 +33,7 @@
   * __Logfile :__
     * For debug purposes
 
-## Install
+## Installation
 1. `git clone http://github.com/alonzo3569/system_setup`
 2. `cd system_setup`
 3. Run `./interface.sh`
