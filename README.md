@@ -1,61 +1,68 @@
-# **System_Setup**
+# Linux System Setup Application
 
-This setup script is capable of setting up the following files or applications: 
+## Alonzo System Setup Wizard
+  * This is a shell script application specifically for **Linux ubuntu OS**. 
+  * It is capable of setting up robotic software such as **MOOS** & **ROS** automatically in one's device without asking any user input. (except sudo passwd)
+  
+## Features
+  * __Check device status :__ 
+    * Before installation, setup wizard will check if any MOOS/ROS is installed in this device.
+  * __Install dependencies :__
+    * Setup wizard will also download every dependencies for MOOS or ROS.
+  * __Download MOOS/ROS :__   
+    Below are installation options for user to select  
+    * moos-ivp
+    * moos-ivp-aquaticus
+    * moos-ivp-UAL
+    * your own moos tree
+    * ROS Melodic
+  * __Add path to ~/.bashrc :__
+    * 
+  * __Build MOOS/ROS :__
+    * Remove apps that can't be built.(moos-ivp-aquaticus)
+    * Build MOOS/ROS
+  * __Check installation :__
+    * Check env path 
+    * Check file existence
+    * Check build process
+  * __Logfile :__
+    * For debug purposes
 
-1. .bashrc
-2. moos-ivp
-3. moos-ivp-logan
-4. moos-ivp-aquaticus
-5. vim
-6. terminator
-7. [google][20]
-8. Chinese([Chewing][18])
-9. exFAT(FAT64)
+## Install
+1. `git clone http://github.com/alonzo3569/system_setup`
+2. `cd system_setup`
+3. Run `./interface.sh`
+4. If permission denied, run `chmod u+x`
 
-## Shell Script Reference:
+## Demo
+* __After executing :__ 
 
- * Echo styling:[ **link1**][0] , [**link2**][5]
- * [Echo append string to files][1]
- * Bash_profile & Bashrc: [**link1**][2] , [**link2**][3] , [**link3**][4]
- * Apt v.s. dpkg: [**link1**][6] , [**link2**][7]
+<div align=center>
 
-[0]:    https://misc.flogisoft.com/bash/tip_colors_and_formatting
-[1]:    https://www.itread01.com/p/1386169.html
-[2]:    http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
-[3]:	http://jamestw.logdown.com/posts/283485--bash-profile-bashrc-difference
-[4]:	https://www.itread01.com/p/203281.html
-[5]:	https://blog.csdn.net/solan8/article/details/70172074
-[6]:	https://herb123456.pixnet.net/blog/post/1009880
-[7]:	https://www.itread01.com/content/1548652698.html
+<img src="https://github.com/system_setup/blob/master/docs/passwd.JPG"/><br></br>
 
-## Ubuntu & Win10 Dual Boot notes:
+</div>
 
-1. Win10 Fast startup [**off**][8]
-2. For Dell, BitLocker [**off**][9]
-3. Secure boot **off**
-4. For Dell xps9370, `F2(BIOS) -> System Configuration -> SATA Operation -> Change **RAID** to **ACHI**` [**link1**][10] , [**link2**][11]
+* __Main selection page :__ 
 
-[8]:	http://www.windows5.online/windows/w10/gywin10/201704/93351.html
-[9]:	https://www.dell.com/support/article/tw/zh/twbsd1/sln302845/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-%E4%B8%AD%E5%90%AF%E7%94%A8%E6%88%96%E7%A6%81%E7%94%A8-bitlocker?lang=zh
-[10]:	https://www.itread01.com/p/127721.html
-[11]:	https://www.itread01.com/p/164032.html
+<div align=center>
 
-## Ubuntu & Win10 Dual Boot Reference:
+<img src="https://github.com/system_setup/blob/master/docs/main_option.JPG"/><br></br>
 
-1. Installation: [**link1**][12] , [**link2**][13] , [**link3**][14] , [**link4**][15]
-2. MBR(legacy BIOS) v.s. GPT(UEFI): [**link1**][16] , [**link2**][17] , [**link3**][21]
+</div>
 
-[12]:	https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4
-[13]:	https://min-sheng.github.io/teaching/UEFI_%E9%9B%99%E7%A1%AC%E7%A2%9F%E5%AE%89%E8%A3%9D_Win-10_x_Ubuntu_16.04_%E9%9B%99%E7%B3%BB%E7%B5%B1%E6%95%99%E5%AD%B8/
-[14]:	https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/ubuntu-%E5%AE%89%E8%A3%9Dwin10-ubunto18-04-%E9%9B%99%E7%B3%BB%E7%B5%B1-a53870382df6
-[15]:	https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-ubuntu-18-04-alongside-with-windows-10-or-8-in-dual-boot.html
-[16]:	https://kknews.cc/news/226xq3z.html
-[17]:	https://kknews.cc/zh-tw/news/x22klbg.html
-[18]: https://medium.com/@racktar7743/ubuntu-%E5%9C%A8-ubuntu-18-04-%E4%B8%AD%E6%96%B0%E5%A2%9E%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95-4aa85782f656
-[21]: https://www.reneelab.net/mbr-or-gpt.html
-## Win10 error trouble shooting
+* __During installation :__ 
 
-1. 0xc000000e: [ **link1**][19]
+<div align=center>
 
-[19]: https://www.reneelab.net/win10-start-0xc000000e.html?fbclid=IwAR29UkrvG_E5iFp1h8SiQ17EKjlEcBn62mTFYqd6cN36FUW8o4JWf5zBtZQ
-[20]: http://samwhelp.github.io/book-ubuntu-qna/read/case/app/google-chrome/install?fbclid=IwAR1osksGsYwyXW4kbivbsm2lotWrH3hCIPziL-TYqn9YMhXPlOGh6adyUF0
+<img src="https://github.com/system_setup/blob/master/docs/insatlling.JPG"/><br></br>
+
+</div>
+
+* __After installation :__ 
+
+<div align=center>
+
+<img src="https://github.com/system_setup/blob/master/docs/system_setup_finish.png"/><br></br>
+
+</div>
