@@ -1,9 +1,14 @@
-# Linux System Setup Application
+# Alonzo System Setup Wizard
 
-## Alonzo System Setup Wizard
   * This is a shell script application specifically for **Linux ubuntu OS**. 
   * It is capable of setting up robotic software such as **MOOS** & **ROS** automatically in one's device without asking any user input. (except sudo passwd)
-  
+    
+<div align=center>
+
+<img width="550" height="450" src="https://github.com/alonzo3569/system_setup/blob/master/docs/system_setup_finish.png"/><br></br>
+
+</div>
+
 ## Features
   * __Check device status :__ 
     * Before installation, setup wizard will check if any MOOS/ROS is installed in this device.
@@ -17,7 +22,7 @@
     * your own moos tree
     * ROS Melodic
   * __Add path to ~/.bashrc :__
-    * 
+    * Automatically write moos/ros path to .bashrc
   * __Build MOOS/ROS :__
     * Remove apps that can't be built.(moos-ivp-aquaticus)
     * Build MOOS/ROS
@@ -39,7 +44,7 @@
 
 <div align=center>
 
-<img src="https://github.com/system_setup/blob/master/docs/passwd.JPG"/><br></br>
+<img width="550" height="450" src="https://github.com/alonzo3569/system_setup/blob/master/docs/passwd.JPG"/><br></br>
 
 </div>
 
@@ -47,7 +52,7 @@
 
 <div align=center>
 
-<img src="https://github.com/system_setup/blob/master/docs/main_option.JPG"/><br></br>
+<img width="550" height="450" src="https://github.com/alonzo3569/system_setup/blob/master/docs/main_option.JPG"/><br></br>
 
 </div>
 
@@ -55,7 +60,7 @@
 
 <div align=center>
 
-<img src="https://github.com/system_setup/blob/master/docs/insatlling.JPG"/><br></br>
+<img width="550" height="450" src="https://github.com/alonzo3569/system_setup/blob/master/docs/insatlling.JPG"/><br></br>
 
 </div>
 
@@ -63,6 +68,6 @@
 
 <div align=center>
 
-<img src="https://github.com/system_setup/blob/master/docs/system_setup_finish.png"/><br></br>
+<img width="550" height="450" src="https://github.com/alonzo3569/system_setup/blob/master/docs/system_setup_finish.png"/><br></br>
 
 </div>
