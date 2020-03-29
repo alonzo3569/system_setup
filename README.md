@@ -1,7 +1,7 @@
 # Alonzo System Setup Wizard
 
   * This is a shell script application specifically for **Linux ubuntu OS**. 
-  * It is capable of setting up robotic software such as **MOOS** & **ROS** automatically in one's device without asking any user input. (except sudo passwd)
+  * It is capable of setting up robotic software such as **MOOS** & **ROS** automatically in one's device without asking any user input. (except sudo passwd) <br></br>
     
 <div align=center>
 
