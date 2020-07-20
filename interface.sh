@@ -27,6 +27,8 @@ setup_ros=false
 setup_ivp=false
 setup_aquaticus=false
 setup_UAL=false
+# Modify
+setup_pi_ros=false
 
 export ivp_stdout_path=`find ~/ -name "ivp_stdout.log"` #(main.sh, moos.sh)
 export ivp_stderr_path=`find ~/ -name "ivp_stderr.log"`
@@ -75,8 +77,9 @@ do
 	echo -e "\e[1;92mInstalltion list: \e[0m"
 	echo -e "1)  moos-ivp/aquaticus/UAL"
 	echo -e "2)  moos-ivp-your-own-tree"
-	echo -e "3)  ROS Melodic"
-	echo -e "4)  Start installation process"
+	echo -e "3)  ROS Melodic (Desktop)"
+	echo -e "4)  ROS Melodic (Raspberry pi)"
+	echo -e "5)  Start installation process"
 
 	read choices
 	case $choices in
@@ -189,7 +192,7 @@ do
 
 	;; # end of my own tree case
 #-------------------------------------------------------
-#  Part 9: Main option 3 (Setup ROS Melodic)
+#  Part 9: Main option 3 (Setup ROS Melodic Desktop)
 #-------------------------------------------------------
 	3)	
 	# set setup_ros to true
@@ -198,9 +201,18 @@ do
 	sleep 1	
 	;; # end of ROS case
 #-------------------------------------------------------
-#  Part 10: Main option 5 (Start installation process)
+#  Part 10: Main option 4 (Setup ROS Melodic Raspberry pi)
 #-------------------------------------------------------
-	4)   
+	4)	
+	# set setup_pi_ros to true
+	setup_pi_ros=true
+	echo -e "\e[1;97mROS Melodic (Raspberry pi) is ready to install \e[0m"
+	sleep 1	
+	;; # end of ROS case
+#-------------------------------------------------------
+#  Part 11: Main option 5 (Start installation process)
+#-------------------------------------------------------
+	5)   
 	# Main option 5 case
 	clear_screen
 	echo -e "\e[1;31mStart installation process\e[0m\e[1;5;31m... \e[0m"
@@ -231,7 +243,7 @@ do
 	  setup_my_tree "$URL"
 	fi
 
-	# ROS part
+	# ROS part (Desktop)
 	if [ "$setup_ros" = true ] ; then
 	  
 	  # Check if deamon apt.systemd.daily update is running 
@@ -248,6 +260,11 @@ do
 	  fi
 	fi
 
+	# ROS part (Raspberry pi)
+	if [ "$setup_pi_ros" = true ] ; then
+	  setup_pi_ros
+	fi
+
 	# Check installation result
 	echo -e "\e[1;33m${CHECK_MARK} All process completed\e[0m"
 	sleep 1
@@ -255,7 +272,7 @@ do
 	echo -e "\e[1;34m${CHECK_MARK} All process completed\e[0m"
 	echo -e "--\e[1;33mCheck results... \e[0m" #92:Light green
 
-	final_check_install "$setup_ivp" "$setup_aquaticus" "$setup_UAL" "$setup_own_tree" "$setup_ros"
+	final_check_install "$setup_ivp" "$setup_aquaticus" "$setup_UAL" "$setup_own_tree" "$setup_ros" "$setup_pi_ros"
 
 	echo
 	echo

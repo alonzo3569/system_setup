@@ -195,7 +195,20 @@ final_check_install()
 		fi
 	fi 
 
-	# If ros is on install list, then check
+	# If ros (Desktop) is on install list, then check
+	if [ "$5" = true ] ; then 
+		if [ "`which roscore`" == /opt/ros/melodic/bin/roscore ]
+		  then
+			echo -e "  ${CHECK_MARK} ROS Melodic: success"
+			((success++))
+		else
+			echo -e "  \e[1;31mROS Melodic: FAILED!!\e[0m"
+			((error++))
+		fi
+	fi 
+
+        # Verify!!!
+	# If ros (Raspberry pi) is on install list, then check
 	if [ "$5" = true ] ; then 
 		if [ "`which roscore`" == /opt/ros/melodic/bin/roscore ]
 		  then
