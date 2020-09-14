@@ -168,7 +168,7 @@ setup_UAL()
 	ls ~/moos-ivp-UAL &> /dev/null || mkdir ~/moos-ivp-UAL
 
 	## Download ivp
-	svn co svn://140.112.26.204/moos-ivp-UAL ~/moos-ivp-UAL >> $UAL_stdout_path 2>> $UAL_stderr_path &
+	svn co svn://140.112.26.205/moos-ivp-UAL ~/moos-ivp-UAL >> $UAL_stdout_path 2>> $UAL_stderr_path &
 	waiting "Downloading moos-ivp-UAL"
 	echo -e "\r${CHECK_MARK} Downloading moos-ivp-UAL " 
 
